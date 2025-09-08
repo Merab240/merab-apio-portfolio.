@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f19c0953e9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="about">
+        <div class="container">
+            <nav>
+                <img src="/images/apio.png" alt="" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/pink.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me..</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure consectetur nemo dolorum dolores
+                        nihil facilis, eius ratione doloremque dicta eveniet recusandae rerum neque aspernatur quibusdam
+                        nisi nobis culpa reiciendis exercitationem.</p>
+                    <div class="tab-titles">
+
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Analysis</span><br>Designing Websites</li>
+                            <li><span>Web Development</span><br>Designing Websites</li>
+                            <li><span>Data Management</span><br>Designing Websites</li>
+                            <li><span>QuickBooks</span><br>Designing Websites</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>TPO</span><br>Designing Websites</li>
+                            <li><span>IDI</span><br>Designing Websites</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Makerere</span><br>Designing Websites</li>
+                            <li><span>SCODL</span><br>Designing Websites</li>
+                            <li><span>ISS</span><br>Designing Websites</li>
+                            <li><span>ISS</span><br>Designing Websites</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ 
+    
+
+     <script src="funct.js"></script>
+</body>
+</html>
