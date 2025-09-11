@@ -18,3 +18,30 @@ function opentab(tabName, event){
  //show the content of the active class
  document.getElementById(tabName).classList.add("active-tab");
 }
+
+const hireMeBtn = document.getElementById("hireMeBtn");
+const popupForm = document.getElementById("popupForm");
+const closeBtn = document.querySelector(".close");
+
+// Open popup
+hireMeBtn.addEventListener("click", () => {
+  popupForm.style.display = "flex";
+});
+
+// Close popup
+closeBtn.addEventListener("click", () => {
+  popupForm.style.display = "none";
+});
+
+// Close when clicking outside modal
+window.addEventListener("click", (e) => {
+  if (e.target === popupForm) {
+    popupForm.style.display = "none";
+  }
+});
+
+
+
+
+
+  

@@ -28,26 +28,42 @@
                     <p>Data Analyst<span> & </span> </p>
                     <p>Front End Web Developer</p>
                     <h2>Hi, I'm <span>Merab Apio</span></h2>
-                    <button type="submit" class="btn btn2">Hire me</button>
+                    <button type="submit" class="btn btn2" id="hireMeBtn">Hire me</button>
                 </div>
 
                 <img src="/images/profile.jpg" alt="">
 
             </div>
         </div>
-        <div class="footer"> 
+
+        <div id="popupForm" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Job Details</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" id="form1">
+                     <input type="hidden" name="access_key" value="cedd6469-7535-429d-be0d-ba02319002ad">
+                    <input type="text" name="name" id="name" placeholder="Full Names" required>
+                    <input type="text" name="email" id="email" placeholder="Email Address" required>
+                    <input type="text" name="jobtitle" id="job" placeholder="Job Title" required>
+                    <input type="text" name="org" id="org" placeholder="Organization" required>
+                    <textarea name="message" id="message" rows="6" placeholder="Job Description" required></textarea>
+                    <button type="submit"class="btn1">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
             <p>@ 2025 Merab Apio| all rights reserved</p>
         </div>
     </div>
 
     <!-----About Me----->
-    
+
     <!--................Services...............-->
-    
+
     <!--............Portfolio.............-->
-    
+
     <!--..................Contact........................-->
-   
+
 
     <script src="funct.js"></script>
 </body>

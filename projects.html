@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,53 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f19c0953e9.js" crossorigin="anonymous"></script>
 </head>
-<body>
-<div class="nav-container">
-        <nav id="about-nav">
-                <!--<img src="/images/apio.png" alt="" class="logo">-->
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
 
-                </ul>
-            </nav>
+<body>
+    <div class="nav-container">
+        <nav id="about-nav">
+            <!--<img src="/images/apio.png" alt="" class="logo">-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
     </div>
     <div id="projects">
-        
+
         <div class="container">
             <h1 class="subtitle">My Work</h1>
+            <div class="work-list1">
+                <a href="projectdetail.html">
+                    <h3>Excel project <img src="/images/arrow.png" alt="" id="arrow"></h3>
+                </a>
+                <a href="Powerbid.html">
+                    <h3>Power BI project <img src="/images/arrow.png" alt="" id="arrow"></h3>
+                </a>
+                <a href="bikesales.html">
+                    <h3>Excel project <img src="/images/arrow.png" alt="" id="arrow"></h3>
+                </a>
+            </div>
+
             <div class="work-list">
+
                 <div class="work">
                     <img src="/images/Dashboard.PNG" alt="">
                     <div class="layer">
                         <h3>Suppermarket Dashboard</h3>
-                        <p>This project focuses on the analysis of a supermarket sales dataset got from Kaggle.com to uncover key business insights and profitability trends. </p>
+                        <p>This project focuses on the analysis of a supermarket sales dataset got from Kaggle.com to
+                            uncover key business insights and profitability trends. </p>
                         <a href="#">
                             <i class="fa-solid fa-square-arrow-up-right"></i>
                         </a>
                     </div>
+
                 </div>
+
+
                 <div class="work">
                     <img src="/images/PBI.png" alt="">
                     <div class="layer">
@@ -46,22 +65,35 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="work">
                     <img src="/images/bdasgboard.PNG" alt="">
                     <div class="layer">
-                        <h3>Suppermarket dataset</h3>
-                        <p>Excel dashboard to analyze bike sales performance. The dashboard tracks total sales, revenue by product and region, customer trends, and monthly growth.</p>
+                        <h3>Bike Sales Dashboard</h3>
+                        <p>Excel dashboard to analyze bike sales performance. The dashboard tracks total sales, revenue
+                            by product and region, customer trends, and monthly growth.</p>
                         <a href="#">
                             <i class="fa-solid fa-square-arrow-up-right"></i>
                         </a>
                     </div>
+
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+
+
+            <a href="#" class="btn" id="projectBtn">See more projects</a>
+            
         </div>
+
+        
+    </div>
+
+
+
     </div>
 
 
     <script src="funct.js"></script>
 </body>
+
 </html>
