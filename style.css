@@ -10,6 +10,7 @@ body {
     color: white;
 }
 
+
 /*......................Home.........................*/
 #header {
     width: 100%;
@@ -103,6 +104,8 @@ nav ul li a:hover::after {
     margin-top: 20px;
 
 }
+
+
 
 /*..........About.......................................................................*/
 #about {
@@ -202,6 +205,78 @@ nav ul li a:hover::after {
     display: block;
 }
 
+/*...........Hire Me Form...........*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup box */
+.modal-content {
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 5px 10px #262626;
+    position: relative;
+
+}
+
+.modal-content h2 {
+    color: rgb(236, 111, 8);
+    margin-left: 50px;
+
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#form1 {
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+#form1 input,
+#form1 textarea {
+    font-size: 15px;
+
+}
+
+.btn1 {
+    display: inline-block;
+    background: rgb(236, 111, 8);
+    color: #fff;
+    width: 30%;
+
+}
+
+#form1 .btn1 {
+    padding: 10px 40px;
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 50px;
+}
 
 /*................My Services...............................................*/
 #services {
@@ -261,6 +336,81 @@ nav ul li a:hover::after {
     margin-top: 50px;
 }
 
+/*.............Colaspse Section.....*/
+
+  .extra-services {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+/* expand only the second services-list */
+#trigger:checked ~ .extra-services {
+  max-height: 1000px; /* big enough */
+  opacity: 1;
+  padding: 10px 0;
+}
+
+.colaspse{
+  margin-top: 30px;
+}
+
+.colaspse input {
+  display: none;
+}
+.colaspse #p1{
+    text-align: center;
+    color:green ;
+    font-size: 20px;
+   
+}
+.colaspse img{
+    width: 20px;
+    height: 20px;
+    
+}
+label {
+  font-size: 18px;
+  
+  margin-left: 45%;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 10px 10px 30px;
+  border-radius: 10px;
+  color: green;
+  font-weight: 500;
+}
+
+
+/* arrow before label */
+label:before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent green;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  transition: transform 0.5s;
+  transform-origin: 3px center;
+}
+
+/* rotate arrow */
+#trigger:checked + label:before {
+  transform: rotate(90deg);
+}
+
+/* default text */
+label::after {
+  content: " View More";
+}
+
+/* change text when expanded */
+#trigger:checked + label::after {
+  content: " View Less";
+  color: rgb(236, 111, 8);
+}
 
 
 /*.............Projects..............................................................*/
@@ -393,147 +543,6 @@ nav ul li a:hover::after {
     z-index: 1000;
 }
 
-/*.............Colaspse Section.....*/
-
-  .extra-services {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s ease;
-  opacity: 0;
-}
-
-/* expand only the second services-list */
-#trigger:checked ~ .extra-services {
-  max-height: 1000px; /* big enough */
-  opacity: 1;
-  padding: 10px 0;
-}
-
-.colaspse{
-  margin-top: 30px;
-}
-
-input {
-  display: none;
-}
-
-label {
-  font-size: 18px;
-  
-  margin-left: 45%;
-  cursor: pointer;
-  position: relative;
-  padding: 10px 10px 10px 30px;
-  border-radius: 10px;
-  color: green;
-  font-weight: 500;
-}
-
-/* arrow before label */
-label:before {
-  content: "";
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent transparent green;
-  position: absolute;
-  top: 12px;
-  left: 10px;
-  transition: transform 0.5s;
-  transform-origin: 3px center;
-}
-
-/* rotate arrow */
-#trigger:checked + label:before {
-  transform: rotate(90deg);
-}
-
-/* default text */
-label::after {
-  content: " View More";
-}
-
-/* change text when expanded */
-#trigger:checked + label::after {
-  content: " View Less";
-}
-
-/*.......................Contact Me..................................................*/
-#contact {
-    padding: 80px 0;
-
-}
-
-.contact-left {
-    flex-basis: 35%;
-}
-
-.contact-right {
-    flex-basis: 60%;
-}
-
-.contact-left h1 {
-    color: green;
-}
-
-.contact-left p {
-    margin-top: 30px;
-
-}
-
-.contact-left p i {
-    color: rgb(236, 111, 8);
-    font-size: 15px;
-}
-
-.social-icons {
-    margin-top: 30px;
-
-}
-
-.social-icons a {
-    text-decoration: none;
-    font-size: 25px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline;
-    transition: transform 0.5s;
-}
-
-.social-icons a:hover {
-    color: rgb(236, 111, 8);
-    transform: translateY(-5px);
-}
-
-.btn.btn2 {
-    display: inline-block;
-    background: rgb(236, 111, 8);
-}
-
-.contact-right form {
-    width: 100%;
-
-}
-
-form input,
-form textarea {
-    width: 80%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: white;
-    font-size: 18px;
-    border-radius: 6px;
-}
-
-form .btn2 {
-    padding: 10px 40px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
 /*............Project details............*/
 .project1 {
     margin-top: 15px;
@@ -611,78 +620,85 @@ form .btn2 {
 
 }
 
-/*...........Hire Me Form...........*/
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
 
-/* Popup box */
-.modal-content {
-    background: #fff;
-    padding: 10px;
-    border-radius: 12px;
-    width: 500px;
-    max-width: 90%;
-    box-shadow: 0 5px 10px #262626;
-    position: relative;
+/*.......................Contact Me..................................................*/
+#contact {
+    padding: 80px 0;
 
 }
 
-.modal-content h2 {
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left h1 {
+    color: green;
+}
+
+.contact-left p {
+    margin-top: 30px;
+
+}
+
+.contact-left p i {
     color: rgb(236, 111, 8);
-    margin-left: 50px;
+    font-size: 15px;
+}
+
+.social-icons {
+    margin-top: 30px;
 
 }
 
-/* Close button */
-.close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
+.social-icons a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline;
+    transition: transform 0.5s;
 }
 
-#form1 {
+.social-icons a:hover {
+    color: rgb(236, 111, 8);
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: rgb(236, 111, 8);
+}
+
+.contact-right form {
     width: 100%;
+
+}
+
+form input,form textarea {
+    width: 80%;
     border: 0;
     outline: none;
+    background: #262626;
     padding: 15px;
-    font-size: 16px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
     border-radius: 6px;
 }
 
-#form1 input,
-#form1 textarea {
-    font-size: 15px;
-
-}
-
-.btn1 {
-    display: inline-block;
-    background: rgb(236, 111, 8);
-    color: #fff;
-    width: 30%;
-
-}
-
-#form1 .btn1 {
+form .btn2 {
     padding: 10px 40px;
-    font-size: 17px;
-    margin-top: 10px;
+    font-size: 18px;
+    margin-top: 20px;
     cursor: pointer;
-    border-radius: 10px;
-    margin-left: 50px;
 }
+
+
+
 
 /*..................CSS  for small screen........*/
 @media only screen and (max-width: 600px) {}
