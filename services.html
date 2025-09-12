@@ -25,19 +25,20 @@
     </div>
 
     <div id="services">
-
         <div class="container">
             <h1 class="subtitle">My Services</h1>
+
+            <!-- First services-list (always visible) -->
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-chart-line"></i>
-
                     <h2>Data Analysis</h2>
-                    <p>I help business make better decisions by turning raw data into meaningful insights. Using tools
+                    <p>I help businesses make better decisions by turning raw data into meaningful insights. Using tools
                         like Excel, SQL, and Power BI, I clean, analyze, and visualize data to highlight trends, track
                         performance, and support strategic planning.</p>
                     <a href="#">Learn more</a>
                 </div>
+
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
@@ -46,6 +47,7 @@
                         ensure websites are both functional and visually appealing.</p>
                     <a href="#">Learn more</a>
                 </div>
+
                 <div>
                     <i class="fa-solid fa-file-invoice-dollar"></i>
                     <h2>QuickBooks</h2>
@@ -53,12 +55,45 @@
                         their finances and focus on growth.</p>
                     <a href="#">Learn more</a>
                 </div>
+            </div>
+
+            <!-- Collapsible section -->
+            <div class="colaspse">
+
+                <input type="checkbox" id="trigger">
+                <label for="trigger"></label>
+
+
+                <!-- Second services-list (hidden by default) -->
+                <div class="services-list extra-services">
+                    <div>
+                        
+                        <h2>Data Management</h2>
+                        <p>I am skilled in data management, including collecting, organizing, and cleaning datasets to
+                            ensure accuracy and reliability. I analyze data and create visual reports using tools like
+                            Excel, SQL, and Power BI, providing actionable insights that support informed business
+                            decisions.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        
+                        <h2>Administrative skills</h2>
+                        <p>From organizing accounts to generating reports, I make it easier for businesses to stay on
+                            top of their finances and focus on growth.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                       
+                        <h2>Other skills</h2>
+                        <p>I have strong report writing skills, I am proficient in data entry, I possess solid computer skills,
+                            including Microsoft Office Suite and other essential software and communication skills..</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
 
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
     </div>
-
     <script src="funct.js"></script>
 </body>
 

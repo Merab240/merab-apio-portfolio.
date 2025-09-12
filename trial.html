@@ -5,78 +5,196 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-/* Modal background */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
-  justify-content: center;
-  align-items: center;
+    .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
 }
 
-/* Modal box */
-.modal-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  width: 350px;
-  max-width: 90%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+.services-list div {
+    background: #262626;
+    padding: 25px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
 }
 
-/* Close button */
-.close {
-  float: right;
-  font-size: 24px;
+.services-list div i {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(236, 111, 8);
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: green;
+}
+
+
+.services-list div a {
+    text-decoration: none;
+    color: green;
+    font-size: 15px;
+    margin-top: 15px;
+    display: inline-block;
+
+}
+
+.services-list div:hover {
+    background: rgb(236, 111, 8);
+    transform: translate(-10px);
+}
+
+    .extra-services {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+/* expand only the second services-list */
+#trigger:checked ~ .extra-services {
+  max-height: 1000px; /* big enough */
+  opacity: 1;
+  padding: 10px 0;
+}
+
+#cool {
+  margin-top: 30px;
+}
+
+input {
+  display: none;
+}
+
+label {
+  font-size: 18px;
+  background-color: lightblue;
+  margin-left: 45%;
   cursor: pointer;
+  position: relative;
+  padding: 10px 10px 10px 30px;
+  border-radius: 10px;
+  color: green;
+  font-weight: 500;
 }
-</style>
+
+/* arrow before label */
+#cool label:before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent green;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  transition: transform 0.5s;
+  transform-origin: 3px center;
+}
+
+/* rotate arrow */
+#trigger:checked + label:before {
+  transform: rotate(90deg);
+}
+
+/* default text */
+#cool label::after {
+  content: " View More";
+}
+
+/* change text when expanded */
+#trigger:checked + label::after {
+  content: " View Less";
+}
+
+  </style>
 </head>
 <body>
-  <button id="hireMeBtn">Hire Me</button>
+  <div id="services">
+  <div class="container">
+    <h1 class="subtitle">My Services</h1>
 
-<!-- Popup Form (hidden by default) -->
-<div id="popupForm" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Hire Me</h2>
-    <form>
-      <label for="name">Your Name</label>
-      <input type="text" id="name" required>
+    <!-- First services-list (always visible) -->
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-chart-line"></i>
+        <h2>Data Analysis</h2>
+        <p>I help businesses make better decisions by turning raw data into meaningful insights. Using tools
+          like Excel, SQL, and Power BI, I clean, analyze, and visualize data to highlight trends, track
+          performance, and support strategic planning.</p>
+        <a href="#">Learn more</a>
+      </div>
 
-      <label for="email">Your Email</label>
-      <input type="email" id="email" required>
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Development</h2>
+        <p>I design and build responsive, user-friendly websites that bring ideas to life. From creating
+          clean front-end interfaces with HTML, CSS, and JavaScript to connecting data on the back end, I
+          ensure websites are both functional and visually appealing.</p>
+        <a href="#">Learn more</a>
+      </div>
 
-      <label for="message">Message</label>
-      <textarea id="message" rows="4" required></textarea>
+      <div>
+        <i class="fa-solid fa-file-invoice-dollar"></i>
+        <h2>QuickBooks</h2>
+        <p>From organizing accounts to generating reports, I make it easier for businesses to stay on top of
+          their finances and focus on growth.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
 
-      <button type="submit">Send</button>
-    </form>
+    <!-- Collapsible section -->
+    <div class="colaspse">
+      <div id="cool">
+        <input type="checkbox" id="trigger">
+        <label for="trigger"></label>
+      </div>
+
+      <!-- Second services-list (hidden by default) -->
+      <div class="services-list extra-services">
+        <div class="list">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+          <h2>QuickBooks</h2>
+          <p>From organizing accounts to generating reports, I make it easier for businesses to stay on
+            top of their finances and focus on growth.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="list">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+          <h2>QuickBooks</h2>
+          <p>From organizing accounts to generating reports, I make it easier for businesses to stay on
+            top of their finances and focus on growth.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="list">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+          <h2>QuickBooks</h2>
+          <p>From organizing accounts to generating reports, I make it easier for businesses to stay on
+            top of their finances and focus on growth.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <script>
-const hireMeBtn = document.getElementById("hireMeBtn");
-const popupForm = document.getElementById("popupForm");
-const closeBtn = document.querySelector(".close");
+  const trigger = document.getElementById("trigger");
+const extra = document.querySelector(".extra-services");
 
-// Open popup
-hireMeBtn.onclick = () => {
-  popupForm.style.display = "flex";
-};
-
-// Close popup
-closeBtn.onclick = () => {
-  popupForm.style.display = "none";
-};
-
-// Close when clicking outside
-window.onclick = (e) => {
-  if (e.target === popupForm) {
-    popupForm.style.display = "none";
+trigger.addEventListener("change", () => {
+  if (trigger.checked) {
+    extra.style.maxHeight = "2000px";
+    extra.style.opacity = "1";
+  } else {
+    extra.style.maxHeight = "0";
+    extra.style.opacity = "0";
   }
-};
+});
 </script>
 </body>
 </html>
