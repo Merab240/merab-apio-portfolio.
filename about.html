@@ -1,79 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me Page</title>
+    <meta name="description" content="About Merab Apio — Data Analyst and Front-End Web Developer. Skills, experience, and education.">
+    <title>About Me — Merab Apio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f19c0953e9.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="nav-container">
-        <nav id="about-nav">
-                <!--<img src="/images/apio.png" alt="" class="logo">-->
+
+    <!-- ── Navigation (same as homepage) ─────────────────────── -->
+    <header class="site-header">
+        <div class="header-inner">
+            <img src="images/apio.png" alt="Merab Apio logo" class="logo">
+            <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html" class="nav-active">About Me</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
-
                 </ul>
             </nav>
-    </div>
-  <div id="about">
-    
-        <div class="container">
-            
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/pink.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me..</h1>
-                    <p>I am a Data analyst and a front-end web developer, skilled in turning data into insights and building intuitive, responsive websites. I combine analytical thinking with creative problem-solving to deliver solutions that drive results and enhance user experiences.</p><br>
-                    <h3 class="subtitle1">What i love doing</h3>
-                    <p>I am passionate about giving back to my community and empowering others, especially the girl child & women. I enjoy volunteering, mentoring, and creating opportunities for young people to learn and grow. Engaging in community work gives me a sense of purpose and allows me to make a positive impact while developing leadership and teamwork skills.</p>
-                    <div class="tab-titles">
-
-                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
-                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Data Analysis</span><br>Excel, Power BI, SQL</li>
-                            <li><span>Data Management</span><br>OVCMIS, SAVIX, HYBRID, DHIS2</li>
-                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, Figma</li>
-                            <li><span>QuickBooks</span><br>Invoicing, expense tracking, receipt issuing</li>
-                            <li><span>Administrative skills</span><br>Communication skills, report preparation, administrative support</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>TPO Uganda</span><br>Data Clerk</li>
-                            <li><span>Infectious Diseases Institute (IDI)</span><br>Data Assistant</li>
-
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Symbiosis Centre for Distance Learning</span><br>Certificate in Data Analysis</li>
-                            <li><span>Makerere University</span><br>Bachelors in SSW</li>
-                            <li><span>I.S.S</span><br>UACE & UCE</li>
-                            <li><span>Educate the Girl Child</span><br>Web Development & IU/UX</li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
- 
-    
+    </header>
 
-     <script src="funct.js"></script>
+    <main>
+
+        <!-- ── About intro ───────────────────────────────────── -->
+        <section class="about-intro">
+            <div class="about-inner">
+
+                <!-- Profile image -->
+                <div class="about-img-wrap">
+                    <div class="about-img-ring">
+                        <img src="images/pink.jpg" alt="Merab Apio" class="about-photo">
+                    </div>
+                </div>
+
+                <!-- Bio -->
+                <div class="about-bio">
+                    <p class="about-label">About Me</p>
+                    <h1 class="about-name">Merab <span>Apio</span></h1>
+                    <p class="about-role">
+                        <i class="fa-solid fa-chart-line"></i> Data Analyst &nbsp;·&nbsp;
+                        <i class="fa-solid fa-code"></i> Front-End Web Developer
+                    </p>
+                    <p class="about-desc">
+                        I am skilled in turning data into insights and building intuitive,
+                        responsive websites. I combine analytical thinking with creative
+                        problem-solving to deliver solutions that drive results and enhance
+                        user experiences.
+                    </p>
+
+                    <!-- Quick stats -->
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="about-stat-num">2+</span>
+                            <span class="about-stat-lbl">Years experience</span>
+                        </div>
+                        <div class="about-stat-div"></div>
+                        <div class="about-stat">
+                            <span class="about-stat-num">3+</span>
+                            <span class="about-stat-lbl">Projects delivered</span>
+                        </div>
+                        <div class="about-stat-div"></div>
+                        <div class="about-stat">
+                            <span class="about-stat-num">5+</span>
+                            <span class="about-stat-lbl">Tools &amp; technologies</span>
+                        </div>
+                    </div>
+
+                    <div class="about-ctas">
+                        <a href="contact.html" class="cta-primary">
+                            <i class="fa-solid fa-envelope"></i> Contact Me
+                        </a>
+                        <a href="images/Document.pdf" download class="cta-secondary">
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── What I Love Doing ─────────────────────────────── -->
+        <section class="about-passion">
+            <div class="about-passion-inner">
+                <div class="section-label-wrap">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="section-label">What I Love Doing</span>
+                </div>
+                <p class="passion-text">
+                    I am passionate about giving back to my community and empowering others,
+                    especially the girl child and women. I enjoy volunteering, mentoring, and
+                    creating opportunities for young people to learn and grow. Community work
+                    gives me a sense of purpose and allows me to make a positive impact while
+                    developing leadership and teamwork skills.
+                </p>
+            </div>
+        </section>
+
+        <!-- ── Skills / Experience / Education / Hobbies ────── -->
+        <section class="about-tabs-section">
+            <div class="about-tabs-inner">
+
+                <!-- Tab navigation — pill style -->
+                <div class="about-tab-nav" role="tablist">
+                    <button class="about-tab-btn active-tab-btn" role="tab"
+                        aria-selected="true" aria-controls="skills"
+                        onclick="opentab('skills', event)">
+                        <i class="fa-solid fa-chart-line"></i> Skills
+                    </button>
+                    <button class="about-tab-btn" role="tab"
+                        aria-selected="false" aria-controls="experience"
+                        onclick="opentab('experience', event)">
+                        <i class="fa-solid fa-briefcase"></i> Experience
+                    </button>
+                    <button class="about-tab-btn" role="tab"
+                        aria-selected="false" aria-controls="education"
+                        onclick="opentab('education', event)">
+                        <i class="fa-solid fa-graduation-cap"></i> Education
+                    </button>
+                    <button class="about-tab-btn" role="tab"
+                        aria-selected="false" aria-controls="hobbies"
+                        onclick="opentab('hobbies', event)">
+                        <i class="fa-solid fa-star"></i> Hobbies
+                    </button>
+                </div>
+
+                <!-- Tab panels -->
+                <div class="tab-contents active-tab" id="skills" role="tabpanel">
+                    <div class="hobbies-grid">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h4>Data Analysis</h4>
+                            <p>Excel, Power BI, SQL</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-database"></i>
+                            <h4>Data Management</h4>
+                            <p>OVCMIS, SAVIX, HYBRID, DHIS2</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-code"></i>
+                            <h4>Web Development</h4>
+                            <p>HTML, CSS, JavaScript, Figma</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                            <h4>QuickBooks</h4>
+                            <p>Invoicing, expense tracking, receipt issuing</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h4>Administrative Skills</h4>
+                            <p>Communication, report preparation, administrative support</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-contents" id="experience" role="tabpanel">
+                    <div class="hobbies-grid">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-building"></i>
+                            <h4>TPO Uganda</h4>
+                            <p>Data Clerk</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-flask"></i>
+                            <h4>Infectious Diseases Institute (IDI)</h4>
+                            <p>Data Assistant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-contents" id="education" role="tabpanel">
+                    <div class="hobbies-grid">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h4>Symbiosis Centre for Distance Learning</h4>
+                            <p>Certificate in Data Analysis</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-university"></i>
+                            <h4>Makerere University</h4>
+                            <p>Bachelor's in SSW</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-school"></i>
+                            <h4>I.S.S</h4>
+                            <p>UACE &amp; UCE</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h4>Educate the Girl Child</h4>
+                            <p>Web Development &amp; UI/UX</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-contents" id="hobbies" role="tabpanel">
+                    <div class="hobbies-grid">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-scissors"></i>
+                            <h4>Fashion &amp; Sewing</h4>
+                            <p>Creating and exploring new clothing designs.</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-book-open"></i>
+                            <h4>Learning &amp; Research</h4>
+                            <p>Exploring new skills, technologies, and ideas.</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                            <h4>Creative Design</h4>
+                            <p>Experimenting with visual ideas and creative projects.</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-music"></i>
+                            <h4>Music &amp; Audio</h4>
+                            <p>Enjoying music and discovering new sounds.</p>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-earth-africa"></i>
+                            <h4>Exploring New Places</h4>
+                            <p>Experiencing new environments and cultures.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Merab Apio | All rights reserved</p>
+    </footer>
+
+    <script src="funct.js"></script>
 </body>
+
 </html>

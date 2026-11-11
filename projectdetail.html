@@ -4,113 +4,506 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project detail page</title>
+    <meta name="description" content="Supermarket Sales Profitability Analysis — Data analysis of a Myanmar supermarket chain dataset using Excel, PivotTables, and data visualisation. By Merab Apio.">
+    <title>Supermarket Sales Profitability Analysis — Merab Apio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="supermarket-case-study.css">
+    <script src="https://kit.fontawesome.com/f19c0953e9.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="nav-container">
-        <nav id="about-nav">
-            <!--<img src="/images/apio.png" alt="" class="logo">-->
-            <ul>
-                <li><a href="projects.html">Back</a></li>
+<body class="cs-body">
 
+    <!-- ── Navigation ─────────────────────────────────────────── -->
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo-mark" aria-label="Merab Apio — Home">
+                <span class="logo-mark-initials">M<span>A</span></span>
+                <span class="logo-mark-name">Merab Apio</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html#projects" class="nav-link cs-back-link">
+                        &#8592; Back to Projects
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            </ul>
-        </nav>
-    </div>
-    <div class="projecs">
-        <div class="container">
-            <div class="project1">
-                <h3>Suprtmarket sales Project: <span>Final course project</span></h3>
-                <h4>Introduction</h4>
-                <p>This project focuses on the analysis of a supermarket sales dataset got from Kaggle.com to uncover
-                    key business insights and profitability trends.
-                    The primary objective of this analysis is to identify top performing product lines, understand sales
-                    and profit distribution, and highlight areas for strategic focus to maximize profitability. I
-                    examined sales and profit data across various dimensions such as product line, city, and customer
-                    type.
-                    One of the key findings from this study revealed the top three product lines contributing the
-                    highest profits, providing valuable insights for inventory planning, marketing, and resource
-                    allocation. This data driven approach helps the supermarket make informed decisions to improve
-                    operational efficiency and boost overall sales.
+    <main class="cs-main">
+
+        <!-- ── A. Hero ────────────────────────────────────────── -->
+        <section class="cs-hero">
+            <div class="cs-hero-inner">
+                <div class="cs-hero-meta">
+                    <span class="cs-category-badge">Data Analysis</span>
+                    <span class="cs-status-badge cs-status--done">
+                        <i class="fa-solid fa-check"></i> Completed
+                    </span>
+                </div>
+                <h1 class="cs-title">Supermarket Sales Profitability Analysis</h1>
+                <p class="cs-subtitle">Turning transaction-level sales data into profitability insights.</p>
+                <p class="cs-intro">
+                    This project analyses a Myanmar supermarket chain dataset sourced from Kaggle
+                    to uncover profitability trends, identify top-performing product lines, and
+                    understand customer behaviour across branches, cities, and demographics.
+                    The analysis was completed using Microsoft Excel — including PivotTables and
+                    data visualisation — as the final project for a data analytics course.
                 </p>
-                <h4>Objectives</h4>
-                <ul>
-                    <li>Analyze the monthly Sales and profits</li>
-                    <li>Top 3 profitable product lines</li>
-                    <li>Profitable Cities/Branches</li>
-                    <li>Gender wise sales based on customer type</li>
-                </ul>
-                <h4>Scoop $ Background</h4>
-                <p>This Dataset was got from Kaggle and it records individual transactions from a supermarket chain in
-                    Myanmar, which comprises of invoice ID, branch, city, customer type, gender, product line, unit
-                    price, quantity, tax, total sales, date, payment method, cogs, gross margin metrics (gross margin
-                    percentage & gross income), and customer rating</p>
-                <h4>User Requirements</h4>
-                <ul>
-                    <li>Clear KPIs: Total sales, total quantity sold, total cost of goods sold, total revenue, gross
-                        income, average rating.</li>
-                    <li>Rankings of branches and product lines by performance.</li>
-                    <li>Insights on member vs normal customers and payment preferences.</li>
-                    <li>Easy to read and understand charts.</li>
-                </ul>
-                <h4>Objectives</h4>
-                <ul>
-                    <li>Analyze the monthly Sales and profits</li>
-                    <li>Top 3 profitable product lines</li>
-                    <li>Profitable Cities/Branches</li>
-                    <li>Gender wise sales based on customer type</li>
-                    <li>Product line least liked by customers</li>
-                </ul>
-                <h4>Data Visualization in MS Excel</h4>
+                <div class="cs-tool-row">
+                    <span class="cs-tool-chip">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg"
+                             alt="" class="cs-tool-icon cs-icon--green"> Excel
+                    </span>
+                    <span class="cs-tool-chip">
+                        <i class="fa-solid fa-table" style="font-size:14px;color:#6d5efc;"></i> PivotTables
+                    </span>
+                    <span class="cs-tool-chip">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg"
+                             alt="" class="cs-tool-icon cs-icon--yellow"> Power BI
+                    </span>
+                    <span class="cs-tool-chip">
+                        <i class="fa-solid fa-chart-bar" style="font-size:14px;color:#6d5efc;"></i> Data Visualisation
+                    </span>
+                </div>
+                <div class="cs-hero-ctas">
+                    <a href="#cs-dashboard" class="cs-btn-primary">
+                        <i class="fa-solid fa-table-columns"></i> View Dashboard
+                    </a>
+                    <a href="#cs-charts" class="cs-btn-secondary">
+                        <i class="fa-solid fa-chart-bar"></i> View Charts
+                    </a>
+                </div>
+            </div>
+        </section>
 
-                <div class="graph">
-                    <img src="images/graph1.png" alt="">
-                    <p>The City of Naypyitaw has the highest total profits of $5,265.18 followed by Yangon with total
-                        profits of $5,057.16 and Mandalay recorded the least total profits of $5,057.03 in the three
-                        months.
-                        Naypyitaw had the highest profits in the month of January, Mandalay had the highest profits of
-                        10.66% in the month of February and Yangon had the highest profits of 11.66% in the month of
-                        March
+        <!-- ── B. Project Summary Strip ───────────────────────── -->
+        <section class="cs-section cs-section--alt">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">Project Summary</h2>
+                <div class="cs-summary-strip">
+                    <div class="cs-summary-item">
+                        <p class="cs-summary-label">Project Type</p>
+                        <p class="cs-summary-value">Data Analysis</p>
+                    </div>
+                    <div class="cs-summary-item">
+                        <p class="cs-summary-label">Dataset</p>
+                        <p class="cs-summary-value">Kaggle — Myanmar Supermarket Sales</p>
+                    </div>
+                    <div class="cs-summary-item">
+                        <p class="cs-summary-label">Tools Used</p>
+                        <p class="cs-summary-value">Excel, PivotTables, Power BI, Data Visualisation</p>
+                    </div>
+                    <div class="cs-summary-item">
+                        <p class="cs-summary-label">Main Focus</p>
+                        <p class="cs-summary-value">Sales &amp; Profitability Analysis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── C. Objectives & Tools ──────────────────────────── -->
+        <section class="cs-section">
+            <div class="cs-section-inner cs-two-col">
+
+                <div class="cs-col">
+                    <h2 class="cs-section-title">Project Objectives</h2>
+                    <p class="cs-section-desc">
+                        The analysis was designed to answer these key business questions
+                        about the supermarket chain's performance.
+                    </p>
+                    <ul class="cs-objectives-list">
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            Analyse monthly sales and profits across the dataset period.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            Identify the top 3 most profitable product lines.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            Determine the most profitable cities and branches.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            Examine gender-wise sales based on customer type.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            Identify the product line least favoured by customers.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="cs-col">
+                    <h2 class="cs-section-title">Tools &amp; Skills Used</h2>
+                    <p class="cs-section-desc">Full toolkit applied across this project.</p>
+                    <div class="cs-tools-grid">
+                        <div class="cs-tool-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg"
+                                 alt="Excel" class="cs-tool-icon cs-icon--green">
+                            <div>
+                                <strong>Microsoft Excel</strong>
+                                <p>Data preparation, cleaning, and initial exploration</p>
+                            </div>
+                        </div>
+                        <div class="cs-tool-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg"
+                                 alt="PivotTables" class="cs-tool-icon cs-icon--green">
+                            <div>
+                                <strong>PivotTables</strong>
+                                <p>Aggregating and slicing sales data across dimensions</p>
+                            </div>
+                        </div>
+                        <div class="cs-tool-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg"
+                                 alt="Data Visualisation" class="cs-tool-icon cs-icon--green">
+                            <div>
+                                <strong>Data Visualisation</strong>
+                                <p>Excel charts presenting sales, profit, and trend insights</p>
+                            </div>
+                        </div>
+                        <div class="cs-tool-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg"
+                                 alt="Power BI" class="cs-tool-icon cs-icon--yellow">
+                            <div>
+                                <strong>Power BI</strong>
+                                <p>Interactive dashboard presenting KPIs, rankings, and trends</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── D. Power BI Dashboard ─────────────────────────── -->
+        <section class="cs-section cs-section--alt" id="cs-dashboard">
+            <div class="cs-section-inner">
+                <div class="cs-dashboard-header">
+                    <div>
+                        <h2 class="cs-section-title">Power BI Dashboard</h2>
+                        <p class="cs-section-desc">
+                            An interactive Power BI dashboard was built to present the supermarket
+                            sales and profitability data visually — covering KPIs, product line
+                            rankings, city and branch comparisons, customer segmentation, and
+                            sales trends across the dataset period.
+                        </p>
+                    </div>
+                    <span class="cs-status-badge cs-status--done cs-badge--large">
+                        <i class="fa-solid fa-check"></i> Completed
+                    </span>
+                </div>
+
+                <!-- Dashboard preview -->
+                <div class="cs-dashboard-wrap">
+                    <img
+                        src="images/Dashboard.PNG"
+                        alt="Supermarket Sales Profitability Analysis — Power BI Dashboard showing KPIs, employee metrics by department, salary breakdowns, and demographic trends"
+                        class="cs-dashboard-img"
+                    >
+                </div>
+
+                <p class="cs-dashboard-caption">
+                    Power BI dashboard presenting supermarket sales KPIs, product line and branch
+                    performance, customer type breakdowns, and sales trends — built as part of this
+                    data analysis project.
+                </p>
+
+                <!-- Resource buttons — add only when assets are ready -->
+                <!--
+                    OPTIONAL: uncomment and update these buttons once you have
+                    a published report URL or a .pbix file to share.
+
+                <div class="cs-dashboard-actions">
+                    <a href="YOUR_POWER_BI_REPORT_URL" target="_blank" rel="noopener noreferrer"
+                       class="cs-btn-primary" aria-label="View the full interactive supermarket sales Power BI report">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> View Full Dashboard
+                    </a>
+                    <a href="images/supermarket-sales.pbix" download
+                       class="cs-btn-secondary" aria-label="Download the supermarket sales Power BI .pbix file">
+                        <i class="fa-solid fa-download"></i> Download .pbix
+                    </a>
+                </div>
+                -->
+            </div>
+        </section>
+
+        <!-- ── E. Introduction & Scope ────────────────────────── -->
+        <section class="cs-section cs-section--alt">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">Introduction &amp; Scope</h2>
+                <p class="cs-section-desc">
+                    Background context and dataset description for this project.
+                </p>
+
+                <div class="cs-prose-card">
+                    <h3 class="cs-prose-title">
+                        <i class="fa-solid fa-file-lines"></i> Introduction
+                    </h3>
+                    <p>
+                        This project focuses on the analysis of a supermarket sales dataset sourced from
+                        Kaggle to uncover key business insights and profitability trends. The primary
+                        objective is to identify top-performing product lines, understand sales and profit
+                        distribution, and highlight areas for strategic focus to maximise profitability.
+                        Sales and profit data were examined across various dimensions such as product line,
+                        city, and customer type. One of the key findings revealed the top three product
+                        lines contributing the highest profits, providing valuable insights for inventory
+                        planning, marketing, and resource allocation. This data-driven approach helps the
+                        supermarket make informed decisions to improve operational efficiency and boost
+                        overall sales.
                     </p>
                 </div>
-                <div class="graph">
-                    <img src="images/graph2.png" alt="">
-                    <p>The City of Naypyitaw has the highest total profits of $5,265.18 followed by Yangon with total
-                        profits of $5,057.16 and Mandalay recorded the least total profits of $5,057.03 in the three
-                        months.
-                        Naypyitaw had the highest profits in the month of January, Mandalay had the highest profits of
-                        10.66% in the month of February and Yangon had the highest profits of 11.66% in the month of
-                        March
+
+                <div class="cs-prose-card">
+                    <h3 class="cs-prose-title">
+                        <i class="fa-solid fa-database"></i> Scope &amp; Background
+                    </h3>
+                    <p>
+                        This dataset was sourced from Kaggle and records individual transactions from a
+                        supermarket chain in Myanmar. It comprises: invoice ID, branch, city, customer
+                        type, gender, product line, unit price, quantity, tax, total sales, date, payment
+                        method, cost of goods sold (COGS), gross margin percentage, gross income, and
+                        customer rating.
                     </p>
                 </div>
-                <div class="graph">
-                    <img src="images/graph3.png" alt="">
-                    <p>In both Customer type customer type, Females account for more sales of $194,671.84 in total than
-                        males with a total of $128,294.91 and Considering the Customer type, Members brought in more
-                        sales of $189,694.76 than Normal with total sales of $133,271.99.</p>
-                </div>
-                <div class="graph">
-                    <img src="images/graph4.png" alt="">
-                    <p>Saturday is the peak sales day of the week where most customers make sales
-                    </p>
-                </div>
-                <h4>Conclusion</h4>
-                <ul>
-                    <li>Top-performing branch (Giza)</li>
-                    <li>Top 3 leading product lines (Food and beverages, Sports and travel & Electronic accessories)</li>
-                    <li>Though Naypyitaw showed the highest profits in total across the three months, Mandalay and Yangon also showed highest profits in the month of February and March</li>
-                    <li>Fashion accessories being the most expensive does not reach the top 3 profitable product lines</li>
-                    <li>Members accounted for more revenue to the business than Normal</li>
+            </div>
+        </section>
+
+        <!-- ── E. User Requirements ───────────────────────────── -->
+        <section class="cs-section">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">User Requirements</h2>
+                <p class="cs-section-desc">
+                    The following requirements guided the structure and outputs of the analysis.
+                </p>
+                <ul class="cs-req-list">
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Clear KPIs covering total sales, total quantity sold, total cost of goods sold,
+                        total revenue, gross income, and average rating.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Rankings of branches and product lines by performance.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Insights on member vs. normal customers and payment preferences.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Easy-to-read and easy-to-understand charts for non-technical stakeholders.
+                    </li>
                 </ul>
             </div>
-            <a href="Powerbid.html"><img src="images/arrow.png" alt="" id="arrowp"></a>
+        </section>
 
-        </div>
+        <!-- ── F. Data Visualisations ─────────────────────────── -->
+        <section class="cs-section cs-section--alt" id="cs-charts">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">Data Visualisations</h2>
+                <p class="cs-section-desc">
+                    Four Excel charts were produced to present the key findings across the dataset's
+                    most important dimensions.
+                </p>
 
-    </div>
+                <div class="cs-charts-grid">
 
+                    <!-- Chart 1 — City Profits -->
+                    <div class="cs-chart-card">
+                        <div class="cs-chart-img-wrap">
+                            <img
+                                src="images/graph1.png"
+                                alt="Bar chart comparing total profits by city — Naypyitaw, Yangon, and Mandalay — across three months"
+                                class="cs-chart-img"
+                            >
+                        </div>
+                        <div class="cs-chart-body">
+                            <h3 class="cs-chart-title">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Profit by City
+                            </h3>
+                            <p class="cs-chart-finding">
+                                Naypyitaw recorded the highest total profits at approximately $5,265,
+                                followed closely by Yangon at $5,057. Mandalay recorded the lowest
+                                cumulative profit across the three-month period. Each city led in profit
+                                during a different month — Naypyitaw in January, Mandalay peaking in
+                                February, and Yangon achieving its highest share in March.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Chart 2 — Product Line Performance -->
+                    <div class="cs-chart-card">
+                        <div class="cs-chart-img-wrap">
+                            <img
+                                src="images/graph2.png"
+                                alt="Chart showing profit contribution by product line, with Food and Beverages highest and Health and Beauty lowest"
+                                class="cs-chart-img"
+                            >
+                        </div>
+                        <div class="cs-chart-body">
+                            <h3 class="cs-chart-title">
+                                <i class="fa-solid fa-box-open"></i>
+                                Product Line Performance
+                            </h3>
+                            <p class="cs-chart-finding">
+                                Food and Beverages emerged as the most profitable product line, followed
+                                by Sports and Travel and Electronic Accessories — the top three overall.
+                                Fashion Accessories, despite being among the higher-priced categories,
+                                did not rank in the top three for profitability. Health and Beauty
+                                recorded the lowest profit contribution across the period.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Chart 3 — Gender & Customer Type -->
+                    <div class="cs-chart-card">
+                        <div class="cs-chart-img-wrap">
+                            <img
+                                src="images/graph3.png"
+                                alt="Chart showing total sales split by gender and customer type — Member vs Normal"
+                                class="cs-chart-img"
+                            >
+                        </div>
+                        <div class="cs-chart-body">
+                            <h3 class="cs-chart-title">
+                                <i class="fa-solid fa-users"></i>
+                                Gender &amp; Customer Type
+                            </h3>
+                            <p class="cs-chart-finding">
+                                Across both customer types, females accounted for higher total sales
+                                ($194,671.84) compared to males ($128,294.91). Considering customer
+                                membership, Members generated more revenue ($189,694.76) than Normal
+                                customers ($133,271.99), suggesting that loyalty-focused strategies
+                                could further improve revenue performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Chart 4 — Day-of-Week Sales -->
+                    <div class="cs-chart-card">
+                        <div class="cs-chart-img-wrap">
+                            <img
+                                src="images/graph4.png"
+                                alt="Chart showing the volume of customer transactions by day of the week, with Saturday as the peak day"
+                                class="cs-chart-img"
+                            >
+                        </div>
+                        <div class="cs-chart-body">
+                            <h3 class="cs-chart-title">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Sales by Day of Week
+                            </h3>
+                            <p class="cs-chart-finding">
+                                Saturday is the peak sales day of the week, recording the highest number
+                                of customer transactions. This pattern suggests that weekend staffing,
+                                stock replenishment, and promotional activity are worth prioritising
+                                around the Saturday peak.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── G. Conclusion ──────────────────────────────────── -->
+        <section class="cs-section">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">Conclusion</h2>
+                <p class="cs-section-desc">
+                    Key findings drawn from the analysis of the Myanmar supermarket dataset.
+                </p>
+                <div class="cs-conclusion-list">
+
+                    <div class="cs-conclusion-item">
+                        <div class="cs-conclusion-icon">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <p class="cs-conclusion-text">
+                            <strong>Naypyitaw</strong> was the top-performing branch overall, recording
+                            the highest cumulative profits across the three-month period.
+                        </p>
+                    </div>
+
+                    <div class="cs-conclusion-item">
+                        <div class="cs-conclusion-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="cs-conclusion-text">
+                            The <strong>top 3 most profitable product lines</strong> were: Food and
+                            Beverages, Sports and Travel, and Electronic Accessories.
+                        </p>
+                    </div>
+
+                    <div class="cs-conclusion-item">
+                        <div class="cs-conclusion-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <p class="cs-conclusion-text">
+                            Although Naypyitaw led overall, <strong>Mandalay and Yangon</strong> recorded
+                            their peak profits in February and March respectively, showing variation in
+                            seasonal performance across branches.
+                        </p>
+                    </div>
+
+                    <div class="cs-conclusion-item">
+                        <div class="cs-conclusion-icon">
+                            <i class="fa-solid fa-tag"></i>
+                        </div>
+                        <p class="cs-conclusion-text">
+                            <strong>Fashion Accessories</strong>, despite being a high-value category,
+                            did not reach the top 3 most profitable product lines.
+                        </p>
+                    </div>
+
+                    <div class="cs-conclusion-item">
+                        <div class="cs-conclusion-icon">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+                        <p class="cs-conclusion-text">
+                            <strong>Member customers</strong> contributed more revenue to the business
+                            than Normal customers, highlighting the value of the membership programme.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── H. Project Navigation ──────────────────────────── -->
+        <section class="cs-section cs-section--alt">
+            <div class="cs-section-inner">
+                <nav class="cs-project-nav" aria-label="Project navigation">
+                    <div class="cs-project-nav-inner">
+                        <a href="index.html#projects" class="cs-nav-link">
+                            <i class="fa-solid fa-arrow-left"></i> Back to Projects
+                        </a>
+                        <span class="cs-nav-link cs-nav-link--center" aria-hidden="true">
+                            Supermarket Sales Profitability Analysis
+                        </span>
+                        <a href="Powerbid.html" class="cs-nav-link">
+                            Next Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ── Footer ─────────────────────────────────────────────── -->
+    <footer class="footer">
+        <p>&copy; 2025 Merab Apio | All rights reserved</p>
+    </footer>
+
+    <script src="funct.js"></script>
 </body>
 
 </html>

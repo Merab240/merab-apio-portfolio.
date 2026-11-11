@@ -4,102 +4,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects Page</title>
+    <meta name="description" content="Projects by Merab Apio — Supermarket Sales Dashboard, Revenue Opportunity Power BI Dashboard, and Bike Sales Excel Dashboard.">
+    <title>My Projects — Merab Apio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f19c0953e9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="nav-container">
-        <nav id="about-nav">
-            <!--<img src="/images/apio.png" alt="" class="logo">-->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
 
-            </ul>
-        </nav>
-    </div>
-    <div id="projects">
-
-        <div class="container">
-            <h1 class="subtitle">My Work</h1>
-            <div class="work-list1">
-                <a href="projectdetail.html">
-                    <h3>Excel project <img src="images/arrow.png" alt="" id="arrow"></h3>
-                </a>
-                <a href="Powerbid.html">
-                    <h3>Power BI project <img src="images/arrow.png" alt="" id="arrow"></h3>
-                </a>
-                <a href="bikesales.html">
-                    <h3>Excel project <img src="images/arrow.png" alt="" id="arrow"></h3>
-                </a>
-            </div>
-
-            <div class="work-list">
-
-                <div class="work">
-                    <img src="images/Dashboard.PNG" alt="">
-                    <div class="layer">
-                        <h3>Suppermarket Dashboard</h3>
-                        <p>This project focuses on the analysis of a supermarket sales dataset got from Kaggle.com to
-                            uncover key business insights and profitability trends. </p>
-                        
-                    </div>
-
-                </div>
-
-
-                <div class="work">
-                    <img src="images/PBI.png" alt="">
-                    <div class="layer">
-                        <h3>Revenue opportunity Dashboad</h3>
-                        <p>An interactive dashboard in Power BI to track potential sales and revenue opportunities</p>
-                        
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="images/bdasgboard.PNG" alt="">
-                    <div class="layer">
-                        <h3>Bike Sales Dashboard</h3>
-                        <p>Excel dashboard to analyze bike sales performance. The dashboard tracks total sales, revenue
-                            by product and region, customer trends, and monthly growth.</p>
-                        
-                    </div>
-
-                </div>
-            </div>
-
-
-
+    <!-- ── Navigation ─────────────────────────────────────────── -->
+    <header class="site-header">
+        <div class="header-inner">
+            <img src="images/apio.png" alt="Merab Apio logo" class="logo">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html" class="nav-active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- Collapsible section -->
-        <div class="colaspse">
+    </header>
 
-            <input type="checkbox" id="trigger">
-            <label for="trigger"></label>
+    <main>
 
+        <!-- ── Page hero strip ───────────────────────────────── -->
+        <section class="page-hero">
+            <div class="page-hero-inner">
+                <p class="about-label">Portfolio</p>
+                <h1 class="page-hero-title">My Work</h1>
+                <p class="page-hero-desc">
+                    A selection of data analysis and web development projects — each one
+                    built to solve a real problem and communicate a clear result.
+                </p>
+            </div>
+        </section>
 
-            <!-- Second services-list (hidden by default) -->
-            <div class="services-list extra-services">
-                   
-                    <p id="p1"><img src="images/sad.png" alt=""> No New projects yet</p>
-            
+        <!-- ── Filter tabs ───────────────────────────────────── -->
+        <section class="proj-section">
+            <div class="proj-filters" role="group" aria-label="Filter projects by category">
+                <button class="proj-filter-btn active-filter" data-filter="all">
+                    All Projects
+                </button>
+                <button class="proj-filter-btn" data-filter="data">
+                    <i class="fa-solid fa-chart-line"></i> Data Analysis
+                </button>
+                <button class="proj-filter-btn" data-filter="web">
+                    <i class="fa-solid fa-code"></i> Web Development
+                </button>
             </div>
 
-        </div>
+            <!-- ── Project cards ─────────────────────────────── -->
+            <div class="proj-grid" id="projGrid">
 
+                <!-- Project 1 -->
+                <article class="proj-card" data-category="data">
+                    <a href="projectdetail.html" class="proj-img-link" aria-label="View Supermarket Sales project">
+                        <div class="proj-img-wrap">
+                            <img src="images/Dashboard.PNG" alt="Supermarket Sales Dashboard screenshot" class="proj-img">
+                            <div class="proj-img-overlay">
+                                <span><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="proj-body">
+                        <div class="proj-meta">
+                            <span class="proj-category">Data Analysis</span>
+                            <span class="proj-tool-badge">Excel</span>
+                        </div>
+                        <h2 class="proj-title">Supermarket Sales Dashboard</h2>
+                        <p class="proj-desc">
+                            Analysis of a supermarket sales dataset from Kaggle to uncover key
+                            business insights, top product lines, and profitability trends across
+                            three cities in Myanmar.
+                        </p>
+                        <div class="proj-tags">
+                            <span class="svc-tag">Excel</span>
+                            <span class="svc-tag">PivotTables</span>
+                            <span class="svc-tag">Data Visualisation</span>
+                            <span class="svc-tag">Business Insights</span>
+                        </div>
+                        <a href="projectdetail.html" class="proj-link">
+                            View Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
 
-    </div>
+                <!-- Project 2 -->
+                <article class="proj-card" data-category="data">
+                    <a href="Powerbid.html" class="proj-img-link" aria-label="View Revenue Opportunity Dashboard project">
+                        <div class="proj-img-wrap">
+                            <img src="images/PBI.png" alt="Revenue Opportunity Power BI Dashboard screenshot" class="proj-img">
+                            <div class="proj-img-overlay">
+                                <span><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="proj-body">
+                        <div class="proj-meta">
+                            <span class="proj-category">Data Analysis</span>
+                            <span class="proj-tool-badge">Power BI</span>
+                        </div>
+                        <h2 class="proj-title">Revenue Opportunity Dashboard</h2>
+                        <p class="proj-desc">
+                            An interactive Power BI dashboard built to identify and track revenue
+                            opportunities across products, regions, and customer segments, enabling
+                            data-driven strategic decisions.
+                        </p>
+                        <div class="proj-tags">
+                            <span class="svc-tag">Power BI</span>
+                            <span class="svc-tag">DAX</span>
+                            <span class="svc-tag">KPI Metrics</span>
+                            <span class="svc-tag">Revenue Analysis</span>
+                        </div>
+                        <a href="Powerbid.html" class="proj-link">
+                            View Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
 
+                <!-- Project 3 -->
+                <article class="proj-card" data-category="data">
+                    <a href="bikesales.html" class="proj-img-link" aria-label="View Bike Sales Dashboard project">
+                        <div class="proj-img-wrap">
+                            <img src="images/bdasgboard.PNG" alt="Bike Sales Excel Dashboard screenshot" class="proj-img">
+                            <div class="proj-img-overlay">
+                                <span><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="proj-body">
+                        <div class="proj-meta">
+                            <span class="proj-category">Data Analysis</span>
+                            <span class="proj-tool-badge">Excel</span>
+                        </div>
+                        <h2 class="proj-title">Bike Sales Dashboard</h2>
+                        <p class="proj-desc">
+                            Excel dashboard analysing bike sales performance — tracking total
+                            sales, revenue by product and region, customer demographics, and
+                            monthly growth trends.
+                        </p>
+                        <div class="proj-tags">
+                            <span class="svc-tag">Excel</span>
+                            <span class="svc-tag">PivotCharts</span>
+                            <span class="svc-tag">Sales Trends</span>
+                            <span class="svc-tag">Customer Insights</span>
+                        </div>
+                        <a href="bikesales.html" class="proj-link">
+                            View Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
 
+            </div><!-- /proj-grid -->
+        </section>
 
-    </div>
+        <!-- ── CTA strip ──────────────────────────────────────── -->
+        <section class="svc-cta-strip">
+            <div class="svc-cta-inner">
+                <h2 class="svc-cta-title">Interested in working together?</h2>
+                <p class="svc-cta-desc">I am open to data analysis and web development opportunities.</p>
+                <a href="contact.html" class="cta-primary">
+                    <i class="fa-solid fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+        </section>
 
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Merab Apio | All rights reserved</p>
+    </footer>
 
     <script src="funct.js"></script>
 </body>

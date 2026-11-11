@@ -4,74 +4,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>power BI project</title>
+    <meta name="description" content="Revenue Opportunity Dashboard — Interactive Power BI dashboard tracking revenue opportunities across products, regions, and customer segments. By Merab Apio.">
+    <title>Revenue Opportunity Dashboard — Merab Apio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="powerbid-case-study.css">
+    <script src="https://kit.fontawesome.com/f19c0953e9.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="nav-container">
-        <nav id="about-nav">
-            <!--<img src="/images/apio.png" alt="" class="logo">-->
-            <ul>
-                <li><a href="projects.html">Back</a></li>
+<body class="cs-body">
 
-
-            </ul>
-        </nav>
-    </div>
-    <div class="projecs">
-        <div class="container">
-            <div class="project1">
-                <h3>Revenue Opportunity Dashboard Analysis</h3>
-                <h4>Introduction</h4>
-                <p>This project focuses on analyzing and visualizing bike sales data to provide actionable insights for
-                    business decision-making
-                </p>
-                <h4>Objectives</h4>
-                <p>The project was designed to help business stakeholders identify potential revenue opportunities,
-                    monitor financial performance, and prioritize strategic initiatives based on actionable data
-                    insights.
-                </p>
-                <h4>Data & Sources</h4>
-                <p>Historical sales data, including revenue, product categories, regions, and customer segments.</p>
-                <p>Marketing and sales campaign data to understand opportunity trends.</p>
-
-                <h4>Tools Used</h4>
+    <!-- ── Navigation ─────────────────────────────────────────── -->
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo-mark" aria-label="Merab Apio — Home">
+                <span class="logo-mark-initials">M<span>A</span></span>
+                <span class="logo-mark-name">Merab Apio</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
                 <ul>
-                    <li>Power BI: For building interactive dashboards, visualizations, and slicers.</li>
-                    <li>Excel: For data cleaning, calculations, and preparing datasets.</li>
-                    <li>DAX (Data Analysis Expressions): For creating advanced metrics like revenue growth rate,
-                        opportunity gap, and forecasted revenue.</li>
-
+                    <li><a href="index.html#projects" class="nav-link cs-back-link">
+                        &#8592; Back to Projects
+                    </a></li>
                 </ul>
-
-                <h4>Analysis & Features</h4>
-                <ul>
-                    <li>Revenue Trend Analysis: Visualized monthly, quarterly, and yearly revenue trends to spot growth
-                        patterns and declines.</li>
-                    <li>Opportunity Gap Analysis: Identified potential revenue opportunities by comparing actual vs.
-                        target revenue across regions and product lines.</li>
-                    <li>Top-Performing Products & Regions: Highlighted the products and regions driving the highest
-                        revenue.</li>
-                    <li>KPI Metrics: Showed key performance indicators such as total revenue, average deal size,
-                        opportunity conversion rate, and forecasted revenue.</li>
-
-                </ul>
-
-                <h4>Dashboard</h4>
-                <img src="images/PBI.png" alt="">
-                <h4>Conclusion</h4>
-                <p>The dashboard empowered decision-makers to focus on high-value opportunities, improve revenue
-                    forecasting, and align sales and marketing strategies to maximize growth. The interactive nature of
-                    the dashboard allows quick analysis of trends and insights, supporting data-driven decision-making
-                    across the organization.</p>
-            </div>
-
+            </nav>
         </div>
+    </header>
 
-    </div>
-<a href="bikesales.html"><img src="images/arrow.png" alt="" id="arrowp"></a>
-<a href="projectdetail.html"><img src="images/arrow.png" alt="" id="arrowp1"></a>
+    <main class="cs-main">
+
+        <!-- ── A. Hero ────────────────────────────────────────── -->
+        <section class="cs-hero">
+            <div class="cs-hero-inner">
+                <div class="cs-hero-meta">
+                    <span class="cs-category-badge">Data Visualisation</span>
+                    <span class="cs-status-badge cs-status--done">
+                        <i class="fa-solid fa-check"></i> Completed
+                    </span>
+                </div>
+                <h1 class="cs-title">Revenue Opportunity Dashboard</h1>
+                <p class="cs-subtitle">Using Power BI to identify revenue opportunities and support data-driven decisions.</p>
+                <p class="cs-intro">
+                    This project involved building an interactive Power BI dashboard to help business
+                    stakeholders identify and track revenue opportunities across products, regions, and
+                    customer segments. The goal was to provide a clear, data-driven view of where
+                    growth potential exists — enabling teams to prioritise high-value initiatives and
+                    align sales and marketing efforts more effectively.
+                </p>
+                <div class="cs-tool-row">
+                    <span class="cs-tool-chip">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg"
+                             alt="" class="cs-tool-icon cs-icon--yellow"> Power BI
+                    </span>
+                    <span class="cs-tool-chip">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg"
+                             alt="" class="cs-tool-icon cs-icon--green"> Excel
+                    </span>
+                    <span class="cs-tool-chip">
+                        <i class="fa-solid fa-function" style="font-size:13px;color:#6d5efc;"></i> DAX
+                    </span>
+                    <span class="cs-tool-chip">
+                        <i class="fa-solid fa-chart-bar" style="font-size:13px;color:#6d5efc;"></i> Data Visualisation
+                    </span>
+                </div>
+                <div class="cs-hero-ctas">
+                    <a href="#cs-dashboard" class="cs-btn-primary">
+                        <i class="fa-solid fa-table-columns"></i> View Dashboard
+                    </a>
+                    <a href="index.html#projects" class="cs-btn-secondary">
+                        <i class="fa-solid fa-arrow-left"></i> All Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── B. Project Summary Strip ───────────────────────── -->
+        <section class="cs-section cs-section--alt">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">Project Summary</h2>
+                <div class="cs-summary-strip">
+                    <div class="cs-summary-item">
+                        <p class="cs-summary-label">Project Type</p>
+                        <p class="cs-summary-value">Data Visualisation</p>
+                    </div>
+                    <div class="cs-summary-item">
+                        <p class="cs-summary-label">Primary Tool</p>
+                        <p class="cs-summary-value">Power BI</p>
+                    </div>
+                    <div class="cs-summary-item">
+                        <p class="cs-summary-label">Supporting Tools</p>
+                        <p class="cs-summary-value">Excel, DAX</p>
+                    </div>
+                    <div class="cs-summary-item">
+                        <p class="cs-summary-label">Main Focus</p>
+                        <p class="cs-summary-value">Revenue Opportunity Tracking</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── C. Objectives & Tools ──────────────────────────── -->
+        <section class="cs-section">
+            <div class="cs-section-inner cs-two-col">
+
+                <div class="cs-col">
+                    <h2 class="cs-section-title">Project Objectives</h2>
+                    <p class="cs-section-desc">
+                        The dashboard was designed to address these core business needs.
+                    </p>
+                    <ul class="cs-objectives-list">
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            Identify potential revenue opportunities across products, regions, and customer segments.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            Monitor financial performance through clear KPIs and trend visualisations.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            Help stakeholders prioritise strategic initiatives using actionable data insights.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            Align sales and marketing efforts to areas of highest revenue potential.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="cs-col">
+                    <h2 class="cs-section-title">Tools &amp; Skills Used</h2>
+                    <p class="cs-section-desc">Full toolkit applied across this project.</p>
+                    <div class="cs-tools-grid">
+                        <div class="cs-tool-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg"
+                                 alt="Power BI" class="cs-tool-icon cs-icon--yellow">
+                            <div>
+                                <strong>Power BI</strong>
+                                <p>Interactive dashboard development, visualisations, and slicers</p>
+                            </div>
+                        </div>
+                        <div class="cs-tool-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg"
+                                 alt="Excel" class="cs-tool-icon cs-icon--green">
+                            <div>
+                                <strong>Excel</strong>
+                                <p>Data cleaning, calculations, and dataset preparation</p>
+                            </div>
+                        </div>
+                        <div class="cs-tool-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg"
+                                 alt="DAX" class="cs-tool-icon cs-icon--yellow">
+                            <div>
+                                <strong>DAX</strong>
+                                <p>Advanced measures for revenue growth rate, opportunity gap, and forecasted revenue</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── D. Data & Sources ───────────────────────────────── -->
+        <section class="cs-section cs-section--alt">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">Data &amp; Sources</h2>
+                <p class="cs-section-desc">
+                    The following data categories were used to build the dashboard.
+                </p>
+
+                <div class="cs-prose-card">
+                    <h3 class="cs-prose-title">
+                        <i class="fa-solid fa-database"></i> Historical Sales Data
+                    </h3>
+                    <p>
+                        Transaction-level sales records covering revenue figures, product categories,
+                        geographic regions, and customer segments — used to analyse performance trends
+                        and identify where revenue opportunities exist.
+                    </p>
+                </div>
+
+                <div class="cs-prose-card">
+                    <h3 class="cs-prose-title">
+                        <i class="fa-solid fa-bullhorn"></i> Marketing &amp; Sales Campaign Data
+                    </h3>
+                    <p>
+                        Campaign and sales activity data used to understand opportunity trends — helping
+                        to contextualise revenue performance alongside commercial activity across regions
+                        and product lines.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── E. Analysis & Features ─────────────────────────── -->
+        <section class="cs-section">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">Analysis &amp; Features</h2>
+                <p class="cs-section-desc">
+                    Four core analytical areas were built into the dashboard.
+                </p>
+                <div class="cs-features-grid">
+
+                    <div class="cs-feature-card">
+                        <div class="cs-feature-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="cs-feature-title">Revenue Trend Analysis</h3>
+                        <p class="cs-feature-desc">
+                            Visualised monthly, quarterly, and yearly revenue trends to surface growth
+                            patterns and highlight periods of decline across the dataset.
+                        </p>
+                    </div>
+
+                    <div class="cs-feature-card">
+                        <div class="cs-feature-icon">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                        <h3 class="cs-feature-title">Opportunity Gap Analysis</h3>
+                        <p class="cs-feature-desc">
+                            Identified potential revenue opportunities by comparing actual versus target
+                            revenue across regions and product lines to highlight underperforming areas.
+                        </p>
+                    </div>
+
+                    <div class="cs-feature-card">
+                        <div class="cs-feature-icon">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <h3 class="cs-feature-title">Top-Performing Products &amp; Regions</h3>
+                        <p class="cs-feature-desc">
+                            Highlighted the products and regions driving the highest revenue, helping
+                            stakeholders focus investment and resource allocation effectively.
+                        </p>
+                    </div>
+
+                    <div class="cs-feature-card">
+                        <div class="cs-feature-icon">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <h3 class="cs-feature-title">KPI Metrics</h3>
+                        <p class="cs-feature-desc">
+                            Key performance indicators including total revenue, average deal size,
+                            opportunity conversion rate, and forecasted revenue presented as
+                            prominent dashboard cards.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── F. Dashboard Showcase ──────────────────────────── -->
+        <section class="cs-section cs-section--alt" id="cs-dashboard">
+            <div class="cs-section-inner">
+                <div class="cs-dashboard-header">
+                    <div>
+                        <h2 class="cs-section-title">Power BI Dashboard</h2>
+                        <p class="cs-section-desc">
+                            The dashboard below presents the Revenue Opportunities Report — an interactive
+                            Power BI report covering opportunity overview, revenue and opportunity count
+                            by month, opportunity count by region, pipeline by sales stage, and revenue
+                            by region and state.
+                        </p>
+                    </div>
+                    <span class="cs-status-badge cs-status--done cs-badge--large">
+                        <i class="fa-solid fa-check"></i> Completed
+                    </span>
+                </div>
+
+                <div class="cs-dashboard-wrap">
+                    <img
+                        src="images/PBI.png"
+                        alt="Revenue Opportunities Report — Power BI dashboard showing $1.97bn opportunity revenue, 444 opportunities, revenue and opportunity count by month, opportunity count by region (East, Central, West), pipeline by sales stage, and revenue by region and state with a US map visual"
+                        class="cs-dashboard-img"
+                    >
+                </div>
+
+                <p class="cs-dashboard-caption">
+                    Revenue Opportunities Report — Power BI dashboard presenting opportunity revenue KPIs,
+                    monthly trends, regional breakdowns, pipeline stages, and geographic distribution.
+                </p>
+            </div>
+        </section>
+
+        <!-- ── G. Conclusion ──────────────────────────────────── -->
+        <section class="cs-section">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">Conclusion</h2>
+                <p class="cs-section-desc">
+                    Key outcomes and intended impact of the Revenue Opportunity Dashboard.
+                </p>
+                <div class="cs-conclusion-list">
+
+                    <div class="cs-conclusion-item">
+                        <div class="cs-conclusion-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <p class="cs-conclusion-text">
+                            The dashboard gives decision-makers a <strong>consolidated view of revenue
+                            opportunities</strong> across products, regions, and customer segments — reducing
+                            the time needed to identify where growth potential exists.
+                        </p>
+                    </div>
+
+                    <div class="cs-conclusion-item">
+                        <div class="cs-conclusion-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <p class="cs-conclusion-text">
+                            Revenue trend visuals support <strong>more informed forecasting</strong> by
+                            making monthly, quarterly, and yearly performance patterns immediately visible
+                            to stakeholders.
+                        </p>
+                    </div>
+
+                    <div class="cs-conclusion-item">
+                        <div class="cs-conclusion-icon">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                        <p class="cs-conclusion-text">
+                            The opportunity gap analysis helps teams <strong>prioritise underperforming
+                            regions and product lines</strong> by comparing actual revenue against targets.
+                        </p>
+                    </div>
+
+                    <div class="cs-conclusion-item">
+                        <div class="cs-conclusion-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <p class="cs-conclusion-text">
+                            The interactive nature of the dashboard supports <strong>alignment between
+                            sales and marketing teams</strong> by providing a shared, data-driven view
+                            of pipeline stages and revenue performance.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── H. Project Navigation ──────────────────────────── -->
+        <section class="cs-section cs-section--alt">
+            <div class="cs-section-inner">
+                <nav aria-label="Project navigation">
+                    <div class="cs-project-nav-inner">
+                        <a href="projectdetail.html" class="cs-nav-link">
+                            <i class="fa-solid fa-arrow-left"></i> Supermarket Sales Analysis
+                        </a>
+                        <span class="cs-nav-link cs-nav-link--center" aria-hidden="true">
+                            Revenue Opportunity Dashboard
+                        </span>
+                        <a href="bikesales.html" class="cs-nav-link">
+                            Bike Sales Analysis <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ── Footer ─────────────────────────────────────────────── -->
+    <footer class="footer">
+        <p>&copy; 2025 Merab Apio | All rights reserved</p>
+    </footer>
+
+    <script src="funct.js"></script>
 </body>
 
 </html>

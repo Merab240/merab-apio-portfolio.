@@ -4,59 +4,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me Page</title>
+    <meta name="description" content="Contact Merab Apio — Data Analyst and Front-End Web Developer. Get in touch for data analysis or web development projects.">
+    <title>Contact Me — Merab Apio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f19c0953e9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="nav-container">
-        <nav id="about-nav">
-            <!--<img src="/images/apio.png" alt="" class="logo">-->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
 
-            </ul>
-        </nav>
-    </div>
+    <!-- ── Navigation ─────────────────────────────────────────── -->
+    <header class="site-header">
+        <div class="header-inner">
+            <img src="images/apio.png" alt="Merab Apio logo" class="logo">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="nav-active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div id="contact">
+    <main>
 
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> merab.apio@email.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +256 0000000</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/merab-apio-41b792230/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/merab-apio-41b792230/"><i class="fa-brands fa-square-x-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/merab-apio-41b792230/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.linkedin.com/in/merab-apio-41b792230/"><i class="fa-brands fa-square-github"></i></a>
+        <!-- ── Page hero strip ───────────────────────────────── -->
+        <section class="page-hero">
+            <div class="page-hero-inner">
+                <p class="about-label">Let's connect</p>
+                <h1 class="page-hero-title">Get In Touch</h1>
+                <p class="page-hero-desc">
+                    Have a project in mind or just want to say hello?
+                    Fill in the form or reach out directly — I'd love to hear from you.
+                </p>
+            </div>
+        </section>
+
+        <!-- ── Contact body ──────────────────────────────────── -->
+        <section class="contact-section">
+            <div class="contact-body">
+
+                <!-- Left column — info + socials -->
+                <div class="contact-info-col">
+
+                    <!-- Info cards -->
+                    <div class="contact-info-cards">
+
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <span class="contact-info-label">Email</span>
+                                <!-- TODO: Replace with your real email address -->
+                                <span class="contact-info-value">merab.apio@email.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <span class="contact-info-label">Phone</span>
+                                <!-- TODO: Replace with your real phone number -->
+                                <span class="contact-info-value">+256 0000000</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <span class="contact-info-label">Location</span>
+                                <span class="contact-info-value">Uganda — available worldwide</span>
+                            </div>
+                        </div>
 
                     </div>
-                    <a href="images/Document.pdf" download class="btn btn2">Download CV</a>
+
+                    <!-- Social links -->
+                    <div class="contact-socials">
+                        <p class="contact-socials-label">Find me online</p>
+                        <div class="contact-social-row">
+                            <!-- TODO: Replace # with your actual Facebook profile URL -->
+                            <a href="#" class="contact-social-btn" aria-label="Facebook" title="Facebook" rel="noopener noreferrer">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <!-- TODO: Replace # with your actual X (Twitter) profile URL -->
+                            <a href="#" class="contact-social-btn" aria-label="X / Twitter" title="X / Twitter" rel="noopener noreferrer">
+                                <i class="fa-brands fa-square-x-twitter"></i>
+                                <span>X / Twitter</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/merab-apio-41b792230/" class="contact-social-btn" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <!-- TODO: Replace # with your actual GitHub profile URL -->
+                            <a href="#" class="contact-social-btn" aria-label="GitHub" title="GitHub" rel="noopener noreferrer">
+                                <i class="fa-brands fa-square-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Download CV -->
+                    <a href="images/Document.pdf" download class="cta-secondary contact-cv-btn" aria-label="Download CV">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
 
                 </div>
-                <div class="contact-right">
 
-                    <form action="https://api.web3forms.com/submit" method="POST" id="contactactForm">
-                        <input type="hidden" name="access_key" value="cedd6469-7535-429d-be0d-ba02319002ad">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="text" name="email" placeholder="Your email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
+                <!-- Right column — contact form -->
+                <div class="contact-form-col">
+                    <div class="contact-form-card">
+                        <h2 class="contact-form-title">Send a Message</h2>
+                        <p class="contact-form-subtitle">I usually respond within 24 hours.</p>
 
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form" novalidate>
+                            <input type="hidden" name="access_key" value="cedd6469-7535-429d-be0d-ba02319002ad">
+
+                            <div class="cf-row">
+                                <div class="cf-field">
+                                    <label for="cf-name">Full Name</label>
+                                    <input type="text" id="cf-name" name="Name" placeholder="e.g. Jane Smith" required aria-label="Full Name">
+                                </div>
+                                <div class="cf-field">
+                                    <label for="cf-email">Email Address</label>
+                                    <input type="email" id="cf-email" name="email" placeholder="you@example.com" required aria-label="Email Address">
+                                </div>
+                            </div>
+
+                            <div class="cf-field">
+                                <label for="cf-subject">Subject</label>
+                                <input type="text" id="cf-subject" name="Subject" placeholder="What is this about?" aria-label="Subject">
+                            </div>
+
+                            <div class="cf-field">
+                                <label for="cf-message">Message</label>
+                                <textarea id="cf-message" name="Message" rows="6" placeholder="Tell me about your project or opportunity..." required aria-label="Message"></textarea>
+                            </div>
+
+                            <button type="submit" class="cf-submit">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
+
             </div>
-        </div>
+        </section>
 
-    </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Merab Apio | All rights reserved</p>
+    </footer>
+
     <script src="funct.js"></script>
 </body>
 

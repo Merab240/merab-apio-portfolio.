@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mera Retail Sales & Customer Analytics — Case study by Merab Apio. Power BI dashboard, SQL analysis, and retail business insights.">
+    <title>Mera Retail Sales & Customer Analytics — Merab Apio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mera-case-study.css">
+    <script src="https://kit.fontawesome.com/f19c0953e9.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="cs-body">
+
+    <!-- ── Navigation ─────────────────────────────────────────── -->
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo-mark" aria-label="Merab Apio — Home">
+                <span class="logo-mark-initials">M<span>A</span></span>
+                <span class="logo-mark-name">Merab Apio</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html#projects" class="nav-link cs-back-link">
+                        &#8592; Back to Projects
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cs-main">
+
+        <!-- ── A. Project Introduction ────────────────────────── -->
+        <section class="cs-hero">
+            <div class="cs-hero-inner">
+                <div class="cs-hero-meta">
+                    <span class="cs-category-badge">Data Analysis</span>
+                    <span class="cs-status-badge cs-status--partial">
+                        <i class="fa-solid fa-circle-half-stroke"></i> In Progress
+                    </span>
+                </div>
+                <h1 class="cs-title">Mera Retail Sales &amp; Customer Analytics</h1>
+                <p class="cs-subtitle">Turning retail sales data into actionable business insights.</p>
+                <p class="cs-intro">
+                    This is a personal portfolio and practice project focused on analysing retail
+                    sales data to understand revenue, profit, customer activity, sales channels,
+                    and location performance. The analysis uses Excel for initial data preparation,
+                    PostgreSQL/SQL for structured querying, and Power BI for interactive reporting
+                    and visualisation. The Power BI dashboard is the primary deliverable completed
+                    to date.
+                </p>
+                <div class="cs-tool-row">
+                    <span class="cs-tool-chip">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg" alt="" class="cs-tool-icon cs-icon--green"> Excel
+                    </span>
+                    <span class="cs-tool-chip">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/postgresql.svg" alt="" class="cs-tool-icon cs-icon--blue"> PostgreSQL / SQL
+                    </span>
+                    <span class="cs-tool-chip">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg" alt="" class="cs-tool-icon cs-icon--yellow"> Power BI
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── B. Project Progress Tracker ───────────────────── -->
+        <section class="cs-section cs-section--alt">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">Project Progress</h2>
+                <div class="cs-progress-track">
+
+                    <div class="cs-progress-step cs-step--progress">
+                        <div class="cs-step-icon">
+                            <i class="fa-solid fa-rotate"></i>
+                        </div>
+                        <div class="cs-step-body">
+                            <span class="cs-step-label">Data Preparation</span>
+                            <span class="cs-step-status cs-status--progress">In Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-progress-connector cs-connector--progress"></div>
+
+                    <div class="cs-progress-step cs-step--progress">
+                        <div class="cs-step-icon">
+                            <i class="fa-solid fa-rotate"></i>
+                        </div>
+                        <div class="cs-step-body">
+                            <span class="cs-step-label">SQL Analysis</span>
+                            <span class="cs-step-status cs-status--progress">In Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-progress-connector cs-connector--done"></div>
+
+                    <div class="cs-progress-step cs-step--done">
+                        <div class="cs-step-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="cs-step-body">
+                            <span class="cs-step-label">Power BI Dashboard</span>
+                            <span class="cs-step-status cs-status--done">Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-progress-connector cs-connector--progress"></div>
+
+                    <div class="cs-progress-step cs-step--progress">
+                        <div class="cs-step-icon">
+                            <i class="fa-solid fa-rotate"></i>
+                        </div>
+                        <div class="cs-step-body">
+                            <span class="cs-step-label">Findings &amp; Recommendations</span>
+                            <span class="cs-step-status cs-status--progress">In Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-progress-connector cs-connector--progress"></div>
+
+                    <div class="cs-progress-step cs-step--progress">
+                        <div class="cs-step-icon">
+                            <i class="fa-solid fa-rotate"></i>
+                        </div>
+                        <div class="cs-step-body">
+                            <span class="cs-step-label">Final Documentation</span>
+                            <span class="cs-step-status cs-status--progress">In Progress</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── D. Project Objectives ──────────────────────────── -->
+        <section class="cs-section">
+            <div class="cs-section-inner cs-two-col">
+
+                <div class="cs-col">
+                    <h2 class="cs-section-title">Project Objectives</h2>
+                    <p class="cs-section-desc">
+                        The analysis is designed to answer the following business questions
+                        about retail performance.
+                    </p>
+                    <ul class="cs-objectives-list">
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            How much revenue and profit were generated overall?
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            Which sales channels performed best?
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            Which locations generated the most revenue?
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            How did sales change over time?
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            What recommendations could improve sales performance?
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ── G. Tools & Skills ── -->
+                <div class="cs-col">
+                    <h2 class="cs-section-title">Tools &amp; Skills Used</h2>
+                    <p class="cs-section-desc">Based on work completed so far.</p>
+                    <div class="cs-tools-grid">
+                        <div class="cs-tool-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg" alt="Excel" class="cs-tool-icon cs-icon--green">
+                            <div>
+                                <strong>Excel</strong>
+                                <p>Data preparation and initial review</p>
+                            </div>
+                        </div>
+                        <div class="cs-tool-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/postgresql.svg" alt="PostgreSQL" class="cs-tool-icon cs-icon--blue">
+                            <div>
+                                <strong>PostgreSQL / SQL</strong>
+                                <p>Structured data querying and analysis</p>
+                            </div>
+                        </div>
+                        <div class="cs-tool-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg" alt="Power BI" class="cs-tool-icon cs-icon--yellow">
+                            <div>
+                                <strong>Power BI</strong>
+                                <p>Interactive dashboard and KPI reporting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── C. Dashboard Showcase ──────────────────────────── -->
+        <section class="cs-section cs-section--alt">
+            <div class="cs-section-inner">
+                <div class="cs-dashboard-header">
+                    <div>
+                        <h2 class="cs-section-title">Power BI Dashboard</h2>
+                        <p class="cs-section-desc">
+                            The dashboard below summarises retail sales performance, presenting
+                            key metrics and visual breakdowns across sales channels, locations,
+                            and time periods.
+                        </p>
+                    </div>
+                    <span class="cs-status-badge cs-status--done cs-badge--large">
+                        <i class="fa-solid fa-check"></i> Completed
+                    </span>
+                </div>
+
+                <div class="cs-dashboard-wrap">
+                    <img
+                        src="images/mera.PNG"
+                        alt="Mera Retail Sales & Customer Analytics — Power BI Dashboard"
+                        class="cs-dashboard-img"
+                    >
+                </div>
+                <p class="cs-dashboard-caption">
+                    Power BI dashboard presenting retail sales KPIs, channel performance,
+                    location breakdown, and sales trends. Built as part of this ongoing
+                    analytics project.
+                </p>
+            </div>
+        </section>
+
+        <!-- ── E. Work Completed ──────────────────────────────── -->
+        <section class="cs-section">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">Work Completed</h2>
+                <div class="cs-completed-card">
+                    <div class="cs-completed-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="cs-completed-body">
+                        <h3>Power BI Dashboard</h3>
+                        <p>
+                            An interactive Power BI dashboard has been developed to present key
+                            performance indicators and sales breakdowns for the retail dataset.
+                            The dashboard includes visuals covering overall sales metrics,
+                            channel-level performance, location comparisons, and sales trends
+                            over time — providing a clear, data-driven overview of retail business
+                            performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── F. Remaining Work ──────────────────────────────── -->
+        <section class="cs-section cs-section--alt">
+            <div class="cs-section-inner">
+                <h2 class="cs-section-title">Coming Next</h2>
+                <p class="cs-section-desc">
+                    The following stages are planned or currently in progress.
+                </p>
+                <div class="cs-remaining-list">
+
+                    <div class="cs-remaining-item">
+                        <span class="cs-remaining-num">01</span>
+                        <div class="cs-remaining-body">
+                            <h4>Data Cleaning Documentation</h4>
+                            <p>Finalise and document the data cleaning steps applied to the retail dataset, including handling of missing values, data type corrections, and preparation decisions.</p>
+                            <span class="cs-status-badge cs-status--progress">In Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-remaining-item">
+                        <span class="cs-remaining-num">02</span>
+                        <div class="cs-remaining-body">
+                            <h4>SQL Analysis Queries</h4>
+                            <p>Complete and organise the PostgreSQL queries used to analyse sales by channel, location, and time period. Queries will be documented and shared as part of the final project.</p>
+                            <span class="cs-status-badge cs-status--progress">In Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-remaining-item">
+                        <span class="cs-remaining-num">03</span>
+                        <div class="cs-remaining-body">
+                            <h4>Key Findings</h4>
+                            <p>Document the most important findings from the data analysis, covering revenue performance, top-performing channels and locations, and notable sales patterns.</p>
+                            <span class="cs-status-badge cs-status--progress">Planned</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-remaining-item">
+                        <span class="cs-remaining-num">04</span>
+                        <div class="cs-remaining-body">
+                            <h4>Business Recommendations</h4>
+                            <p>Develop evidence-based recommendations to improve sales performance, based on the findings from the data analysis.</p>
+                            <span class="cs-status-badge cs-status--progress">Planned</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-remaining-item">
+                        <span class="cs-remaining-num">05</span>
+                        <div class="cs-remaining-body">
+                            <h4>Final Project Report</h4>
+                            <p>Prepare the final project documentation, bringing together the data preparation notes, SQL analysis, findings, and recommendations into a complete project report.</p>
+                            <span class="cs-status-badge cs-status--progress">Planned</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ── Footer ─────────────────────────────────────────────── -->
+    <footer class="footer">
+        <p>&copy; 2025 Merab Apio | All rights reserved</p>
+    </footer>
+
+    <script src="funct.js"></script>
+</body>
+
+</html>

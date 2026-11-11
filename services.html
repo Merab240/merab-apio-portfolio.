@@ -4,96 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Services</title>
+    <meta name="description" content="Services offered by Merab Apio — Data Analysis, Web Development, QuickBooks, Data Management, Administrative Skills, and more.">
+    <title>My Services — Merab Apio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f19c0953e9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="nav-container">
-        <nav id="about-nav">
-            <!--<img src="/images/apio.png" alt="" class="logo">-->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
 
-            </ul>
-        </nav>
-    </div>
-
-    <div id="services">
-        <div class="container">
-            <h1 class="subtitle">My Services</h1>
-
-            <!-- First services-list (always visible) -->
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-chart-line"></i>
-                    <h2>Data Analysis</h2>
-                    <p>I help businesses make better decisions by turning raw data into meaningful insights. Using tools
-                        like Excel, SQL, and Power BI, I clean, analyze, and visualize data to highlight trends, track
-                        performance, and support strategic planning.</p>
-                     <!--<a href="#">Learn more</a>-->
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>I design and build responsive, user-friendly websites that bring ideas to life. From creating
-                        clean front-end interfaces with HTML, CSS, and JavaScript to connecting data on the back end, I
-                        ensure websites are both functional and visually appealing.</p>
-                     <!--<a href="#">Learn more</a>-->
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-file-invoice-dollar"></i>
-                    <h2>QuickBooks</h2>
-                    <p>From organizing accounts to generating reports, I make it easier for businesses to stay on top of
-                        their finances and focus on growth.</p>
-                     <!--<a href="#">Learn more</a>-->
-                </div>
-            </div>
-
-            <!-- Collapsible section -->
-            <div class="colaspse">
-
-                <input type="checkbox" id="trigger">
-                <label for="trigger"></label>
-
-
-                <!-- Second services-list (hidden by default) -->
-                <div class="services-list extra-services">
-                    <div>
-                        
-                        <h2>Data Management</h2>
-                        <p>I am skilled in data management, including collecting, organizing, and cleaning datasets to
-                            ensure accuracy and reliability. I analyze data and create visual reports using tools like
-                            Excel, SQL, and Power BI, providing actionable insights that support informed business
-                            decisions.</p>
-                        <!--<a href="#">Learn more</a>-->
-                    </div>
-                    <div>
-                        
-                        <h2>Administrative skills</h2>
-                        <p>From organizing accounts to generating reports, I make it easier for businesses to stay on
-                            top of their finances and focus on growth.</p>
-                       <!--<a href="#">Learn more</a>-->
-                    </div>
-                    <div>
-                       
-                        <h2>Other skills</h2>
-                        <p>I have strong report writing skills, I am proficient in data entry, I possess solid computer skills,
-                            including Microsoft Office Suite and other essential software and communication skills..</p>
-                         <!--<a href="#">Learn more</a>-->
-                    </div>
-                </div>
-
-            </div>
+    <!-- ── Navigation ─────────────────────────────────────────── -->
+    <header class="site-header">
+        <div class="header-inner">
+            <img src="images/apio.png" alt="Merab Apio logo" class="logo">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="services.html" class="nav-active">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <main>
+
+        <!-- ── Page hero strip ───────────────────────────────── -->
+        <section class="page-hero">
+            <div class="page-hero-inner">
+                <p class="about-label">What I offer</p>
+                <h1 class="page-hero-title">My Services</h1>
+                <p class="page-hero-desc">
+                    From raw data to clear decisions, and from wireframes to live websites —
+                    here is how I can help your business grow.
+                </p>
+            </div>
+        </section>
+
+        <!-- ── Services grid ─────────────────────────────────── -->
+        <section class="svc-section">
+            <div class="svc-grid">
+
+                <!-- 1 -->
+                <div class="svc-card">
+                    <div class="svc-icon-wrap">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h2 class="svc-title">Data Analysis</h2>
+                    <p class="svc-desc">
+                        I help businesses make better decisions by turning raw data into
+                        meaningful insights. I clean, analyse, and visualise data to highlight
+                        trends, track performance, and support strategic planning.
+                    </p>
+                    <div class="svc-tags">
+                        <span class="svc-tag">Excel</span>
+                        <span class="svc-tag">Power BI</span>
+                        <span class="svc-tag">SQL</span>
+                        <span class="svc-tag">Dashboards</span>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="svc-card">
+                    <div class="svc-icon-wrap">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h2 class="svc-title">Web Development</h2>
+                    <p class="svc-desc">
+                        I design and build responsive, user-friendly websites. From clean
+                        front-end interfaces to functional, visually appealing web experiences
+                        that work on every device.
+                    </p>
+                    <div class="svc-tags">
+                        <span class="svc-tag">HTML</span>
+                        <span class="svc-tag">CSS</span>
+                        <span class="svc-tag">JavaScript</span>
+                        <span class="svc-tag">Responsive</span>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="svc-card">
+                    <div class="svc-icon-wrap">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h2 class="svc-title">UI / UX Design</h2>
+                    <p class="svc-desc">
+                        I create clean, intuitive interfaces that put the user first.
+                        From wireframes to polished prototypes, I ensure every design
+                        decision improves the experience.
+                    </p>
+                    <div class="svc-tags">
+                        <span class="svc-tag">Figma</span>
+                        <span class="svc-tag">Wireframing</span>
+                        <span class="svc-tag">Prototyping</span>
+                        <span class="svc-tag">User Research</span>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="svc-card">
+                    <div class="svc-icon-wrap">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h2 class="svc-title">Data Management</h2>
+                    <p class="svc-desc">
+                        I collect, organise, and clean datasets to ensure accuracy and
+                        reliability. I build visual reports that provide actionable insights
+                        to support informed business decisions.
+                    </p>
+                    <div class="svc-tags">
+                        <span class="svc-tag">OVCMIS</span>
+                        <span class="svc-tag">SAVIX</span>
+                        <span class="svc-tag">DHIS2</span>
+                        <span class="svc-tag">Data Cleaning</span>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="svc-card">
+                    <div class="svc-icon-wrap">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h2 class="svc-title">QuickBooks</h2>
+                    <p class="svc-desc">
+                        I manage invoicing, track expenses, and generate financial reports
+                        using QuickBooks, making it easier for businesses to stay on top of
+                        their finances and focus on growth.
+                    </p>
+                    <div class="svc-tags">
+                        <span class="svc-tag">Invoicing</span>
+                        <span class="svc-tag">Expense Tracking</span>
+                        <span class="svc-tag">Reports</span>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="svc-card">
+                    <div class="svc-icon-wrap">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h2 class="svc-title">Administrative Support</h2>
+                    <p class="svc-desc">
+                        I provide reliable administrative and data-support services including
+                        report writing, data entry, document preparation, and correspondence
+                        management using Microsoft Office Suite.
+                    </p>
+                    <div class="svc-tags">
+                        <span class="svc-tag">Report Writing</span>
+                        <span class="svc-tag">Data Entry</span>
+                        <span class="svc-tag">MS Office</span>
+                        <span class="svc-tag">Communication</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── CTA strip ──────────────────────────────────────── -->
+        <section class="svc-cta-strip">
+            <div class="svc-cta-inner">
+                <h2 class="svc-cta-title">Ready to work together?</h2>
+                <p class="svc-cta-desc">Get in touch and let's talk about what I can do for you.</p>
+                <a href="contact.html" class="cta-primary">
+                    <i class="fa-solid fa-envelope"></i> Contact Me
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Merab Apio | All rights reserved</p>
+    </footer>
+
     <script src="funct.js"></script>
 </body>
 

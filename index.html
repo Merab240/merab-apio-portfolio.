@@ -4,68 +4,730 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio website</title>
+    <meta name="description" content="Portfolio of Merab Apio — Data Analyst and Front-End Web Developer based in Uganda. Specialising in Excel, Power BI, SQL, HTML, CSS, and JavaScript.">
+    <title>Merab Apio — Data Analyst &amp; Front-End Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f19c0953e9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/apio.png" alt="" class="logo">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
 
+    <!-- ═══════════════════════════════════════════════════════════
+         NAVIGATION (sticky, shared across entire page)
+    ════════════════════════════════════════════════════════════ -->
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+            <a href="#home" class="logo-mark" aria-label="Merab Apio — back to top">
+                <span class="logo-mark-initials">M<span>A</span></span>
+                
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home"     class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#about"    class="nav-link" data-section="about">About Me</a></li>
+                    <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                    <li><a href="#contact"  class="nav-link" data-section="contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="image-container">
-                <div class="header-text">
-                    <p>Data Analyst<span> & </span> </p>
-                    <p>Front End Web Developer</p>
-                    <h2>Hi, I'm <span>Merab Apio</span></h2>
-                    <button type="submit" class="btn btn2" id="hireMeBtn">Hire me</button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SECTION 1 — HOME / HERO  (dark background)
+        ════════════════════════════════════════════════════════ -->
+        <section id="home" class="section-dark">
+            <div class="hero">
+                <div class="hero-content">
+
+                    <!-- Left column — profile image -->
+                    <div class="hero-image-wrap">
+                        <div class="hero-image-ring">
+                            <img src="images/profile.jpg" alt="Portrait of Merab Apio" class="hero-photo">
+                        </div>
+                    </div>
+
+                    <!-- Right column — text -->
+                    <div class="hero-text">
+                        <h1 class="hero-name">
+                            Hi, I'm <span>Merab Apio</span>
+                        </h1>
+
+                        <p class="hero-role">
+                            Data Analyst, Data Entry Specialist
+                            <span class="role-divider">&amp;</span>
+                            Front-End Web Developer
+                        </p>
+
+                        <!-- CTA buttons -->
+                        <div class="hero-ctas">
+                            <button type="button" class="cta-primary" id="hireMeBtn" aria-label="Open hire me form">
+                                <i class="fa-solid fa-paper-plane"></i> Hire Me
+                            </button>
+                            <a href="images/My CV.pdf" target="_blank" rel="noopener noreferrer" class="cta-secondary" aria-label="View CV">
+                                <i class="fa-solid fa-file-lines"></i> View CV
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SECTION 2 — ABOUT  (off-white background)
+        ════════════════════════════════════════════════════════ -->
+        <section id="about" class="section-light">
+
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <!-- Intro -->
+            <div class="about-intro">
+                <div class="about-inner">
+
+                    <div class="about-bio">
+                        <h2 class="about-name">Merab <span>Apio</span></h2>
+                        <p class="about-role">
+                            <i class="fa-solid fa-chart-line"></i> Data Analyst &nbsp;·&nbsp;
+                            <i class="fa-solid fa-keyboard"></i> Data Entry Specialist &nbsp;·&nbsp;
+                            <i class="fa-solid fa-code"></i> Front-End Web Developer
+                        </p>
+                         <p class="about-desc">
+        I'm a data professional with experience in data entry, data collection,
+        data management, and data analysis. I'm skilled at handling and organising
+        data accurately, turning raw information into meaningful insights, and
+        supporting better decision-making.
+    </p>
+
+    <p class="about-desc">
+        I am also an aspiring Full-Stack Developer with a background in Software Engineering.
+        I create intuitive, responsive websites with clean designs, user-friendly
+        interfaces, and practical functionality. I am expanding my skills in backend
+        development, REST APIs, and database integration to build reliable web
+        applications that provide seamless user experiences.
+    </p>
+
+                        
+
+                        <div class="about-ctas">
+                            <a href="#contact" class="cta-primary">
+                                <i class="fa-solid fa-envelope"></i> Contact Me
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-img-wrap">
+                        <div class="about-img-ring">
+                            <img src="images/pink.jpg" alt="Merab Apio" class="about-photo">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+           
+<!-- Tools & Technologies -->
+<div class="about-passion">
+    <div class="tools-section">
+        <div class="section-label-wrap">
+            <span class="section-label">Tools &amp; Technologies</span>
+        </div>
+
+        <!-- Data Analysis -->
+        <div class="tools-category">
+            <h4 class="tools-cat-title">Data Analysis</h4>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg" alt="Excel" class="tool-icon tool-icon--green">
+                    <span>Excel</span>
+                </div>
+                <div class="tool-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/postgresql.svg" alt="PostgreSQL" class="tool-icon tool-icon--blue">
+                    <span>PostgreSQL / MySQL</span>
+                </div>
+                <div class="tool-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg" alt="Power BI" class="tool-icon tool-icon--yellow">
+                    <span>Power BI</span>
+                </div>
+                <div class="tool-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" alt="Python" class="tool-icon tool-icon--blue">
+                    <span>Python</span>
+                </div>
+                <div class="tool-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlesheets.svg" alt="Google Sheets" class="tool-icon tool-icon--green">
+                    <span>Google Sheets</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Collection & Management -->
+        <div class="tools-category">
+            <h4 class="tools-cat-title">Data Collection &amp; Management</h4>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <span class="tool-icon-fa"><i class="fa-solid fa-clipboard-list"></i></span>
+                    <span>KoboToolbox</span>
+                </div>
+               
+                <div class="tool-item">
+                    <span class="tool-icon-fa"><i class="fa-solid fa-database"></i></span>
+                    <span>DHIS2</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Front-End Development -->
+        <div class="tools-category">
+            <h4 class="tools-cat-title">Front-End Development</h4>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/html5.svg" alt="HTML5" class="tool-icon tool-icon--orange">
+                    <span>HTML5</span>
+                </div>
+                <div class="tool-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/css3.svg" alt="CSS3" class="tool-icon tool-icon--blue">
+                    <span>CSS3</span>
+                </div>
+                <div class="tool-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg" alt="JavaScript" class="tool-icon tool-icon--yellow">
+                    <span>JavaScript/TypeScript</span>
+                </div>
+                <div class="tool-item">
+                    <span class="tool-icon-fa"><i class="fa-solid fa-pen-ruler"></i></span>
+                    <span>UI/UX Design</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back-End Development -->
+        <div class="tools-category">
+            <h4 class="tools-cat-title">Back-End Development</h4>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" alt="Python" class="tool-icon tool-icon--blue">
+                    <span>Python</span>
+                </div>
+                <div class="tool-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/django.svg" alt="Django" class="tool-icon tool-icon--green">
+                    <span>Django</span>
+                </div>
+                <div class="tool-item">
+                    <span class="tool-icon-fa"><i class="fa-solid fa-plug"></i></span>
+                    <span>REST APIs</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Version Control -->
+        <div class="tools-category">
+            <h4 class="tools-cat-title">Version Control</h4>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" class="tool-icon tool-icon--default">
+                    <span>Git / GitHub</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+            <!-- Tabs: Skills / Experience / Education / Hobbies -->
+           
+<div class="about-tabs-section">
+    <div class="about-tabs-inner">
+
+        <div class="about-tab-nav" role="tablist">
+            <button class="about-tab-btn active-tab-btn" role="tab"
+                aria-selected="true" aria-controls="skills"
+                onclick="opentab('skills', event)">
+                Skills
+            </button>
+            <button class="about-tab-btn" role="tab"
+                aria-selected="false" aria-controls="experience"
+                onclick="opentab('experience', event)">
+                Experience
+            </button>
+            <button class="about-tab-btn" role="tab"
+                aria-selected="false" aria-controls="education"
+                onclick="opentab('education', event)">
+                Education
+            </button>
+            <button class="about-tab-btn" role="tab"
+                aria-selected="false" aria-controls="hobbies"
+                onclick="opentab('hobbies', event)">
+                Hobbies
+            </button>
+        </div>
+
+        <!-- Skills -->
+        <div class="tab-contents active-tab" id="skills" role="tabpanel">
+            <div class="hobbies-grid">
+
+                <div class="hobby-card">
+                    <h4>Data Analysis</h4>
+                    <p>Excel, Power BI, SQL, Python</p>
                 </div>
 
-                <img src="images/profile.jpg" alt="">
+                <div class="hobby-card">
+                    <h4>Data Entry &amp; Management</h4>
+                    <p>Data validation, record keeping, data cleaning, reporting</p>
+                </div>
 
+                <div class="hobby-card">
+                    <h4>Data Systems</h4>
+                    <p>OVCMIS, SAVIX, HYBRID, DHIS2, KoboToolbox</p>
+                </div>
+
+                <div class="hobby-card">
+                    <h4>Front-End Development</h4>
+                    <p>HTML, CSS, JavaScript, responsive design, UI/UX</p>
+                </div>
+
+                <div class="hobby-card">
+                    <h4>Back-End Development</h4>
+                    <p>Python, Django, REST APIs, PostgreSQL</p>
+                </div>
+
+                <div class="hobby-card">
+                    <h4>Administrative Support</h4>
+                    <p>Documentation, communication, report preparation</p>
+                </div>
+
+            </div>
+
+            <!-- Core Competencies -->
+            <div class="competencies-wrap">
+                <p class="competencies-label">Core Competencies</p>
+                <div class="competencies-list">
+                    <span class="competency-tag">Accurate Data Entry</span>
+                    <span class="competency-tag">Data Cleaning</span>
+                    <span class="competency-tag">Data Analysis</span>
+                    <span class="competency-tag">Data Visualization</span>
+                    <span class="competency-tag">Reporting</span>
+                    <span class="competency-tag">Data Management</span>
+                    <span class="competency-tag">Data Collection</span>
+                    <span class="competency-tag">Front-End Development</span>
+                    <span class="competency-tag">Back-End Development</span>
+                    <span class="competency-tag">Problem Solving</span>
+                    <span class="competency-tag">Teamwork</span>
+                </div>
             </div>
         </div>
 
-        <div id="popupForm" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Job Details</h2>
-                <form action="https://api.web3forms.com/submit" method="POST" id="form1">
-                     <input type="hidden" name="access_key" value="cedd6469-7535-429d-be0d-ba02319002ad">
-                    <input type="text" name="name" id="name" placeholder="Full Names" required>
-                    <input type="text" name="email" id="email" placeholder="Email Address" required>
-                    <input type="text" name="jobtitle" id="job" placeholder="Job Title" required>
-                    <input type="text" name="org" id="org" placeholder="Organization" required>
-                    <textarea name="message" id="message" rows="6" placeholder="Job Description" required></textarea>
-                    <button type="submit"class="btn1">Send</button>
-                </form>
+        <!-- Experience -->
+        <div class="tab-contents" id="experience" role="tabpanel">
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <h4>TPO Uganda</h4>
+                    <p>Data Clerk | Oct 2023 – Jan 2025</p>
+                </div>
+                <div class="hobby-card">
+                    <h4>Infectious Diseases Institute (IDI–ICYD)</h4>
+                    <p>Data Assistant / Data Clerk / Administrative Assistant | Apr 2021 – Jan 2023</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="tab-contents" id="education" role="tabpanel">
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <h4>Refactory Academy</h4>
+                    <p>Programming Apprenticeship</p>
+                </div>
+                <div class="hobby-card">
+                    <h4>Symbiosis Centre for Distance Learning</h4>
+                    <p>Certificate in Data Analysis</p>
+                </div>
+                <div class="hobby-card">
+                    <h4>Educate the Girl Child – Code Queen</h4>
+                    <p>Web Development &amp; UI/UX</p>
+                </div>
+                <div class="hobby-card">
+                    <h4>Makerere University</h4>
+                    <p>Bachelor's Degree in Software Engineering</p>
+                </div>
+                <div class="hobby-card">
+                    <h4>I.S.S</h4>
+                    <p>UACE &amp; UCE</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="tab-contents" id="hobbies" role="tabpanel">
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <h4>Fashion &amp; Sewing</h4>
+                    <p>Creating and exploring new clothing designs.</p>
+                </div>
+                <div class="hobby-card">
+                    <h4>Learning &amp; Research</h4>
+                    <p>Exploring new skills, technologies, and ideas.</p>
+                </div>
+                <div class="hobby-card">
+                    <h4>Creative Design</h4>
+                    <p>Experimenting with visual ideas and creative projects.</p>
+                </div>
+                <div class="hobby-card">
+                    <h4>Music &amp; Audio</h4>
+                    <p>Enjoying music and discovering new sounds.</p>
+                </div>
+                <div class="hobby-card">
+                    <h4>Exploring New Places</h4>
+                    <p>Experiencing new environments and cultures.</p>
+                </div>
             </div>
         </div>
 
     </div>
-    <div class="footer">
-        <p>@ 2025 Merab Apio| all rights reserved</p>
+</div>
+
+
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SECTION 3 — SERVICES  (off-white background)
+        ════════════════════════════════════════════════════════ -->
+        <!-- Services section removed -->
+
+        <!-- ═══════════════════════════════════════════════════════
+             SECTION 4 — PROJECTS  (off-white background)
+        ════════════════════════════════════════════════════════ -->
+        <section id="projects" class="section-light">
+
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+            </div>
+
+            <div class="proj-section">
+
+                <!-- Filter buttons -->
+                <div class="proj-filters" role="group" aria-label="Filter projects by category">
+                    <button class="proj-filter-btn active-filter" data-filter="all">All Projects</button>
+                    <button class="proj-filter-btn" data-filter="data">
+                        <i class="fa-solid fa-chart-line"></i> Data Analysis
+                    </button>
+                    <button class="proj-filter-btn" data-filter="web">
+                        <i class="fa-solid fa-code"></i> Web Development
+                    </button>
+                </div>
+
+                <!-- FEATURED PROJECT -->
+                <div class="proj-featured-wrap" id="projFeatured" data-category="data">
+                    <div class="proj-featured">
+                        <div class="proj-featured-visual">
+                            <a href="mera-retail-case-study.html" aria-label="View Mera Retail case study">
+                                <img src="images/mera.PNG" alt="Mera Retail Sales &amp; Customer Analytics dashboard" class="proj-card-img">
+                            </a>
+                        </div>
+                        <div class="proj-featured-body">
+                            <div class="proj-meta">
+                                <span class="proj-category">Data Analysis</span>
+                                <span class="proj-badge-featured">Featured</span>
+                            </div>
+                            <h3 class="proj-featured-title">
+                                Mera Retail Sales &amp; Customer Analytics
+                            </h3>
+                            <p class="proj-featured-desc">
+                                An end-to-end analytics project covering the full data workflow —
+                                from raw data cleaning and preparation through to analysis,
+                                visualisation, and business reporting.
+                            </p>
+                            <ul class="proj-highlights">
+                                <li><i class="fa-solid fa-check"></i> Cleaned and prepared raw retail sales data for analysis</li>
+                                <li><i class="fa-solid fa-check"></i> Queried and structured data using PostgreSQL</li>
+                                <li><i class="fa-solid fa-check"></i> Performed sales and customer trend analysis in Excel</li>
+                                <li><i class="fa-solid fa-check"></i> Built an interactive Power BI dashboard for business reporting</li>
+                                <li><i class="fa-solid fa-check"></i> Delivered actionable insights to support business decisions</li>
+                            </ul>
+                            <div class="proj-tags" style="margin-bottom:20px;">
+                                <span class="svc-tag">PostgreSQL</span>
+                                <span class="svc-tag">Excel</span>
+                                <span class="svc-tag">Power BI</span>
+                                <span class="svc-tag">Data Cleaning</span>
+                                <span class="svc-tag">DAX</span>
+                                <span class="svc-tag">Business Insights</span>
+                            </div>
+                            <a href="mera-retail-case-study.html" class="proj-link">
+                                View Case Study <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OTHER PROJECT CARDS — uniform two-column layout -->
+                <div class="proj-grid" id="projGrid">
+
+                    <!-- Supermarket Sales -->
+                    <article class="proj-card proj-card--uniform proj-collapsible" data-category="data" data-index="0">
+                        <div class="proj-card-visual">
+                            <a href="projectdetail.html" aria-label="View Supermarket Sales project">
+                                <img src="images/Dashboard.PNG" alt="Supermarket Sales Dashboard" class="proj-card-img">
+                            </a>
+                        </div>
+                        <div class="proj-card-body">
+                            <div class="proj-meta">
+                                <span class="proj-category">Data Analysis</span>
+                                <span class="proj-tool-badge">Excel</span>
+                            </div>
+                            <h3 class="proj-card-title">Supermarket Sales Profitability Analysis</h3>
+                            <p class="proj-card-desc">Analysed a Myanmar supermarket chain dataset to surface profitability trends, top product lines, and customer behaviour insights.</p>
+                            <ul class="proj-highlights">
+                                <li><i class="fa-solid fa-check"></i> Identified the top 3 most profitable product lines</li>
+                                <li><i class="fa-solid fa-check"></i> Compared branch-level performance across three cities</li>
+                                <li><i class="fa-solid fa-check"></i> Examined gender-wise sales and customer type breakdowns</li>
+                                <li><i class="fa-solid fa-check"></i> Visualised weekly and monthly trends with Excel charts</li>
+                            </ul>
+                            <div class="proj-tags">
+                                <span class="svc-tag">Excel</span>
+                                <span class="svc-tag">PivotTables</span>
+                                <span class="svc-tag">Data Visualisation</span>
+                            </div>
+                            <a href="projectdetail.html" class="proj-link">
+                                View Case Study <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Revenue Opportunity -->
+                    <article class="proj-card proj-card--uniform proj-collapsible" data-category="data" data-index="1">
+                        <div class="proj-card-visual">
+                            <a href="Powerbid.html" aria-label="View Revenue Opportunity Dashboard project">
+                                <img src="images/PBI.png" alt="Revenue Opportunity Dashboard" class="proj-card-img">
+                            </a>
+                        </div>
+                        <div class="proj-card-body">
+                            <div class="proj-meta">
+                                <span class="proj-category">Data Visualisation</span>
+                                <span class="proj-tool-badge">Power BI</span>
+                            </div>
+                            <h3 class="proj-card-title">Revenue Opportunity Dashboard</h3>
+                            <p class="proj-card-desc">Interactive Power BI dashboard giving stakeholders a clear view of revenue growth opportunities across products, regions, and customer segments.</p>
+                            <ul class="proj-highlights">
+                                <li><i class="fa-solid fa-check"></i> Visualised monthly, quarterly, and yearly revenue trends</li>
+                                <li><i class="fa-solid fa-check"></i> Identified opportunity gaps vs. target revenue</li>
+                                <li><i class="fa-solid fa-check"></i> Built KPI cards for total revenue and forecasted growth</li>
+                                <li><i class="fa-solid fa-check"></i> Created DAX measures for advanced revenue metrics</li>
+                            </ul>
+                            <div class="proj-tags">
+                                <span class="svc-tag">Power BI</span>
+                                <span class="svc-tag">DAX</span>
+                                <span class="svc-tag">KPI Metrics</span>
+                            </div>
+                            <a href="Powerbid.html" class="proj-link">
+                                View Case Study <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- League OS -->
+                    <article class="proj-card proj-card--uniform proj-collapsible" data-category="web" data-index="2">
+                        <div class="proj-card-visual proj-card-visual--placeholder">
+                            <div class="proj-featured-placeholder">
+                                <i class="fa-solid fa-trophy"></i>
+                                <span>League OS</span>
+                            </div>
+                        </div>
+                        <div class="proj-card-body">
+                            <div class="proj-meta">
+                                <span class="proj-category">Web Development</span>
+                                <span class="proj-tool-badge">Django</span>
+                            </div>
+                            <h3 class="proj-card-title">League OS — Fan Engagement &amp; League Platform</h3>
+                            <p class="proj-card-desc">Collaborative full-stack platform for unified fan engagement and league management, with fantasy features, API integration, and a responsive interface.</p>
+                            <ul class="proj-highlights">
+                                <li><i class="fa-solid fa-check"></i> Built responsive front-end components and views</li>
+                                <li><i class="fa-solid fa-check"></i> Integrated REST API endpoints with the Django backend</li>
+                                <li><i class="fa-solid fa-check"></i> Contributed to fantasy league features and database models</li>
+                                <li><i class="fa-solid fa-check"></i> Participated in testing and iterative refinement</li>
+                            </ul>
+                            <div class="proj-tags">
+                                <span class="svc-tag">React</span>
+                                <span class="svc-tag">Django</span>
+                                <span class="svc-tag">PostgreSQL</span>
+                                <span class="svc-tag">REST API</span>
+                            </div>
+                            <span class="proj-link proj-link--coming">
+                                <i class="fa-solid fa-clock"></i> Coming Soon
+                            </span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Show more / less toggle -->
+                <div class="proj-toggle-wrap">
+                    <button class="proj-toggle-btn" id="projToggleBtn" aria-expanded="false">
+                        <span class="proj-toggle-label">Show All Projects</span>
+                        <i class="fa-solid fa-chevron-down proj-toggle-icon"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SECTION 5 — CONTACT  (off-white background)
+        ════════════════════════════════════════════════════════ -->
+        <section id="contact" class="section-light section-alt">
+
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+
+            <div class="contact-section">
+                <div class="contact-body">
+
+                    <!-- Left — info + socials -->
+                    <div class="contact-info-col">
+
+                        <div class="contact-info-cards">
+                            <div class="contact-info-card">
+                                <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-info-text">
+                                    <span class="contact-info-label">Email</span>
+                                    <span class="contact-info-value">merabapio240@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-info-text">
+                                    <span class="contact-info-label">Phone</span>
+                                    <span class="contact-info-value">+256 784564510</span>
+                                </div>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-info-text">
+                                    <span class="contact-info-label">Location</span>
+                                    <span class="contact-info-value">Uganda — available worldwide</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials">
+                            <p class="contact-socials-label">Find me online</p>
+                            <div class="contact-social-row">
+                                <a href="https://www.linkedin.com/in/merab-apio-41b792230" class="contact-social-btn" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+                                </a>
+                                <a href="https://github.com/Merab240" class="contact-social-btn" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-square-github"></i><span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="images/Document.pdf" download class="cta-secondary contact-cv-btn" aria-label="Download CV">
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </a>
+
+                    </div>
+
+                    <!-- Right — contact form -->
+                    <div class="contact-form-col">
+                        <div class="contact-form-card">
+                            <h3 class="contact-form-title">Send a Message</h3>
+
+                            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form" novalidate>
+                                <input type="hidden" name="access_key" value="cedd6469-7535-429d-be0d-ba02319002ad">
+
+                                <div class="cf-row">
+                                    <div class="cf-field">
+                                        <label for="cf-name">Full Name</label>
+                                        <input type="text" id="cf-name" name="Name" placeholder="e.g. Jane Smith" required aria-label="Full Name">
+                                    </div>
+                                    <div class="cf-field">
+                                        <label for="cf-email">Email Address</label>
+                                        <input type="email" id="cf-email" name="email" placeholder="you@example.com" required aria-label="Email Address">
+                                    </div>
+                                </div>
+
+                                <div class="cf-field">
+                                    <label for="cf-subject">Subject</label>
+                                    <input type="text" id="cf-subject" name="Subject" placeholder="What is this about?" aria-label="Subject">
+                                </div>
+
+                                <div class="cf-field">
+                                    <label for="cf-message">Message</label>
+                                    <textarea id="cf-message" name="Message" rows="6" placeholder="Tell me about your project or opportunity..." required aria-label="Message"></textarea>
+                                </div>
+
+                                <button type="submit" class="cf-submit">
+                                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ── Hire Me Modal ──────────────────────────────────────── -->
+    <div id="popupForm" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header-icon">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <div>
+                    <h2 id="modalTitle">Hire Me</h2>
+                    <p class="modal-subtitle">Tell me about the role and I'll get back to you shortly.</p>
+                </div>
+                <button class="modal-close" aria-label="Close form" id="modalCloseBtn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST" id="form1" class="modal-form" novalidate>
+                <input type="hidden" name="access_key" value="cedd6469-7535-429d-be0d-ba02319002ad">
+                <div class="mf-row">
+                    <div class="mf-field">
+                        <label for="mf-name">Full Name</label>
+                        <input type="text" id="mf-name" name="name" placeholder="e.g. Jane Smith" required aria-label="Full Name">
+                    </div>
+                    <div class="mf-field">
+                        <label for="mf-email">Email Address</label>
+                        <input type="email" id="mf-email" name="email" placeholder="you@example.com" required aria-label="Email Address">
+                    </div>
+                </div>
+                <div class="mf-row">
+                    <div class="mf-field">
+                        <label for="mf-job">Job Title</label>
+                        <input type="text" id="mf-job" name="jobtitle" placeholder="e.g. Data Analyst" required aria-label="Job Title">
+                    </div>
+                    <div class="mf-field">
+                        <label for="mf-org">Organisation</label>
+                        <input type="text" id="mf-org" name="org" placeholder="Your company name" required aria-label="Organisation">
+                    </div>
+                </div>
+                <div class="mf-field">
+                    <label for="mf-message">Job Description</label>
+                    <textarea id="mf-message" name="message" rows="5" placeholder="Job requirements..." required aria-label="Job Description"></textarea>
+                </div>
+                <button type="submit" class="mf-submit">
+                    <i class="fa-solid fa-paper-plane"></i> Send 
+                </button>
+            </form>
+        </div>
     </div>
-    </div>
 
-    <!-----About Me----->
-
-    <!--................Services...............-->
-
-    <!--............Portfolio.............-->
-
-    <!--..................Contact........................-->
-
+    <!-- ── Footer ─────────────────────────────────────────────── -->
+    <footer class="footer">
+        <p>&copy; 2025 Merab Apio | All rights reserved</p>
+    </footer>
 
     <script src="funct.js"></script>
 </body>
